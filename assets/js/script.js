@@ -158,16 +158,18 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-/* -----------------------------------------------------------------
-   NEW: Day/Night Checkbox Toggle
------------------------------------------------------------------ */
+/* NEW: Dark/Light Mode Toggle via Checkbox */
 document.addEventListener('DOMContentLoaded', function () {
   const themeCheckbox = document.getElementById('themeToggleCheckbox');
-
   if (themeCheckbox) {
     themeCheckbox.addEventListener('change', function () {
-      // When checked => apply light-mode, otherwise => dark
       document.body.classList.toggle('light-mode', this.checked);
     });
   }
 });
+
+/* NEW: Open Project Details Functionality */
+function openProjectDetails(projectId) {
+  // Redirect to a project details page (to be created) with the project id as a query parameter
+  window.location.href = "project-details.html?project=" + projectId;
+}
