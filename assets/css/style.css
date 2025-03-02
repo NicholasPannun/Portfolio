@@ -1905,7 +1905,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   position: relative;
   display: inline-block;
   border-radius: 35px;
-  background: url("./assets/images/night-scene.png") no-repeat center/cover;
+  background: url("../images/night-scene.png") no-repeat center/cover;
   cursor: pointer;
   transition: background 0.5s;
 }
@@ -1928,7 +1928,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    Switch background to a "day" scene
 */
 #themeToggleCheckbox:checked + .toggle-switch {
-  background: url("./assets/images/day-scene.png") no-repeat center/cover;
+  background: url("../images/day-scene.png") no-repeat center/cover;
 }
 
 /* Slide the knob to the right and change its color (like a "sun") */
