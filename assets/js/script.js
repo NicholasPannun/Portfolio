@@ -159,14 +159,15 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 /* -----------------------------------------------------------------
-   NEW: Dark/Light Mode Toggle Functionality
+   NEW: Day/Night Checkbox Toggle
 ----------------------------------------------------------------- */
 document.addEventListener('DOMContentLoaded', function () {
-  const toggleButton = document.getElementById('darkModeToggle');
-  if (toggleButton) {
-    toggleButton.addEventListener('click', function () {
-      // Toggle the "light-mode" class on the body element
-      document.body.classList.toggle('light-mode');
+  const themeCheckbox = document.getElementById('themeToggleCheckbox');
+
+  if (themeCheckbox) {
+    themeCheckbox.addEventListener('change', function () {
+      // When checked => apply light-mode, otherwise => dark
+      document.body.classList.toggle('light-mode', this.checked);
     });
   }
 });
