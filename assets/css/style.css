@@ -1883,26 +1883,65 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 /*-----------------------------------
-  NEW: Dark/Light Mode Toggle Styles
+  NEW: Day/Night Toggle Switch
 -----------------------------------*/
 
-#darkModeToggleContainer {
+.theme-toggle {
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
-  text-align: center;
-  /* Adjust spacing as needed */
 }
 
-#darkModeToggle {
-  background: var(--orange-yellow-crayola);
-  color: var(--smoky-black);
-  padding: 10px 15px;
-  border-radius: 5px;
+/* Hide the checkbox visually */
+.theme-toggle input[type="checkbox"] {
+  display: none;
+}
+
+/* The label will be the visible switch.
+   By default (unchecked), we show a "night" background. */
+.toggle-switch {
+  width: 80px; /* Adjust to your preference */
+  height: 35px;
+  position: relative;
+  display: inline-block;
+  border-radius: 35px;
+  background: url("./assets/images/night-scene.png") no-repeat center/cover;
   cursor: pointer;
-  font-size: var(--fs-6);
-  border: none;
+  transition: background 0.5s;
 }
 
-/* NEW: Light mode overrides when .light-mode is added to the body */
+/* The "knob" that slides left/right */
+.toggle-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 28px;
+  height: 28px;
+  background-color: #9f8af7; /* Purple-ish for "moon" */
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+/* 
+   When checkbox is checked => day mode => 
+   Switch background to a "day" scene
+*/
+#themeToggleCheckbox:checked + .toggle-switch {
+  background: url("./assets/images/day-scene.png") no-repeat center/cover;
+}
+
+/* Slide the knob to the right and change its color (like a "sun") */
+#themeToggleCheckbox:checked + .toggle-switch .toggle-knob {
+  transform: translateX(45px);
+  background-color: #ffd700; /* Golden color */
+}
+
+/*-----------------------------------
+  Existing Light Mode Overrides
+  (if you want more overrides, place them here)
+-----------------------------------*/
+
 body.light-mode {
   background: #ffffff;
   color: #333333;
@@ -1917,4 +1956,3 @@ body.light-mode article {
 body.light-mode a {
   color: #0066cc;
 }
-
