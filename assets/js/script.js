@@ -1,12 +1,11 @@
 
-// Existing JavaScript remains untouched
+// Preserve existing JavaScript
 
 // Dark Mode Toggle
 document.addEventListener("DOMContentLoaded", () => {
   const themeSwitch = document.getElementById("theme-switch");
   const body = document.body;
 
-  // Check local storage for saved theme
   if (localStorage.getItem("theme") === "dark") {
     body.classList.add("dark-mode");
     themeSwitch.checked = true;
@@ -23,18 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// "Read More" Functionality
+// Read More Functionality
 document.querySelectorAll(".read-more").forEach(button => {
-  button.addEventListener("click", (event) => {
+  button.addEventListener("click", () => {
     const projectDetails = document.getElementById("project-details");
-    projectDetails.classList.remove("hidden");
-    projectDetails.innerHTML = `
-      <img src="project-image.jpg" alt="Project Image">
-      <h2>Project Title</h2>
-      <p>Languages Used: JavaScript, HTML, CSS</p>
-      <p>Detailed project description goes here...</p>
-      <a href="live-project-link" target="_blank">View Live Project</a>
-    `;
+    projectDetails.classList.toggle("hidden");
   });
 });
 
@@ -55,5 +47,5 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 
 // Download CV Functionality
 document.getElementById("download-cv").addEventListener("click", function() {
-  window.location.href = "path-to-cv.pdf"; // Replace with actual CV file path
+  window.location.href = "path-to-cv.pdf";
 });
