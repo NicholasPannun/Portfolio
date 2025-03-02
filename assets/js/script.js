@@ -157,3 +157,16 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+/* -----------------------------------------------------------------
+   NEW: Dark/Light Mode Toggle Functionality
+----------------------------------------------------------------- */
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleButton = document.getElementById('darkModeToggle');
+  if (toggleButton) {
+    toggleButton.addEventListener('click', function () {
+      // Toggle the "light-mode" class on the body element
+      document.body.classList.toggle('light-mode');
+    });
+  }
+});
