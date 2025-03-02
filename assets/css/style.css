@@ -1,11 +1,27 @@
 
-/* Existing styles remain untouched */
+/* Preserve existing styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
 /* Dark Mode Toggle */
 .theme-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  margin-top: 20px;
+  text-align: center;
 }
 .toggle-label {
   cursor: pointer;
@@ -21,33 +37,30 @@
 
 /* Dark Mode Styles */
 body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-body.dark-mode .main-content {
   background-color: #1e1e1e;
-}
-body.dark-mode a {
   color: #ffffff;
+}
+body.dark-mode .sidebar {
+  background: #2a2a2a;
 }
 
 /* Experience Cards */
 .experience-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
 }
 .experience-card {
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 body.dark-mode .experience-card {
-  background: #2a2a2a;
+  background: #333;
 }
 
-/* Skills Grid */
+/* Skills */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -60,7 +73,7 @@ body.dark-mode .experience-card {
   font-size: 0.9rem;
 }
 body.dark-mode .skill {
-  background: #333;
+  background: #555;
 }
 
 /* Projects */
@@ -71,9 +84,9 @@ body.dark-mode .skill {
 }
 .project-card {
   background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 body.dark-mode .project-card {
   background: #2a2a2a;
@@ -98,6 +111,7 @@ body.dark-mode .read-more {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1rem;
 }
 .contact-form button {
   background: #007bff;
@@ -109,6 +123,6 @@ body.dark-mode .read-more {
 }
 body.dark-mode .contact-form input,
 body.dark-mode .contact-form textarea {
-  background: #333;
+  background: #444;
   color: white;
 }
