@@ -1881,3 +1881,40 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/*-----------------------------------
+  NEW: Dark/Light Mode Toggle Styles
+-----------------------------------*/
+
+#darkModeToggleContainer {
+  margin-top: 20px;
+  text-align: center;
+  /* Adjust spacing as needed */
+}
+
+#darkModeToggle {
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: var(--fs-6);
+  border: none;
+}
+
+/* NEW: Light mode overrides when .light-mode is added to the body */
+body.light-mode {
+  background: #ffffff;
+  color: #333333;
+}
+
+body.light-mode .sidebar,
+body.light-mode article {
+  background: #f8f8f8;
+  border-color: #ddd;
+}
+
+body.light-mode a {
+  color: #0066cc;
+}
+
