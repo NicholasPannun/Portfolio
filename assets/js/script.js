@@ -5,16 +5,14 @@ const elementToggleFunc = function (elem) {
   elem.classList.toggle("active");
 };
 
-// Sidebar variables
+// Sidebar Toggle Functionality
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-
-// Sidebar toggle (Show/Hide Contact Info)
 sidebarBtn.addEventListener("click", function () {
   elementToggleFunc(sidebar);
 });
 
-// Testimonials Modal
+// Testimonials Modal Functionality
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
@@ -42,7 +40,7 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
-// Custom select for project filtering
+// Custom Select for Projects Filtering
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-selecct-value]");
@@ -80,14 +78,13 @@ for (let i = 0; i < filterBtn.length; i++) {
     let selectedValue = this.innerText.toLowerCase();
     selectValue.innerText = this.innerText;
     filterFunc(selectedValue);
-
     lastClickedBtn.classList.remove("active");
     this.classList.add("active");
     lastClickedBtn = this;
   });
 }
 
-// Contact form validation
+// Contact Form Validation
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
@@ -102,7 +99,7 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
-// Page navigation
+// Page Navigation
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
@@ -121,7 +118,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-// Dark/Light Mode Toggle
+// Dark/Light Mode Toggle via Checkbox
 document.addEventListener('DOMContentLoaded', function () {
   const themeCheckbox = document.getElementById('themeToggleCheckbox');
   if (themeCheckbox) {
@@ -131,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// "Read More" button => open project-details.html
+// Open Project Details Functionality
 function openProjectDetails(projectId) {
   window.location.href = "project-details.html?project=" + projectId;
 }
