@@ -5,44 +5,56 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nicholas Pannunzio - Portfolio</title>
-  <!-- Ionicons -->
   <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+
   <!-- favicon -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+
   <!-- custom css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
+
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
+
   <!-- MAIN -->
   <main>
+
     <!-- SIDEBAR -->
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
         <figure class="avatar-box">
           <img src="./assets/images/my-avatar.png" alt="Nicholas Pannunzio" width="80" />
         </figure>
+
         <div class="info-content">
           <h1 class="name" title="Nicholas Pannunzio">Nicholas Pannunzio</h1>
           <p class="title">Project Manager / Product Manager / Data Analyst</p>
+
           <!-- Dark/Light Toggle -->
           <div class="theme-toggle">
-            <label class="switch">
-              <input type="checkbox" id="themeToggleCheckbox">
-              <span class="slider round"></span>
+            <input type="checkbox" id="themeToggleCheckbox" />
+            <label for="themeToggleCheckbox" class="toggle-switch">
+              <span class="toggle-knob"></span>
             </label>
           </div>
         </div>
+
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contact Info</span>
           <ion-icon name="chevron-down"></ion-icon>
         </button>
       </div>
+
       <div class="sidebar-info_more">
         <div class="separator"></div>
+
         <ul class="contacts-list">
           <!-- Email -->
           <li class="contact-item">
@@ -51,9 +63,11 @@
             </div>
             <div class="contact-info">
               <p class="contact-title">Email</p>
+              <!-- mailto link opens the user's default mail client -->
               <a href="mailto:nicholaspannunz@gmail.com" class="contact-link">nicholaspannunz@gmail.com</a>
             </div>
           </li>
+
           <!-- Phone -->
           <li class="contact-item">
             <div class="icon-box">
@@ -64,6 +78,7 @@
               <a href="tel:+15142428190" class="contact-link">(514) 242-8190</a>
             </div>
           </li>
+
           <!-- Location -->
           <li class="contact-item">
             <div class="icon-box">
@@ -74,7 +89,8 @@
               <address>Montreal, Quebec</address>
             </div>
           </li>
-          <!-- Certifications -->
+
+          <!-- Certifications (two lines) -->
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="ribbon-outline"></ion-icon>
@@ -87,7 +103,8 @@
               </ul>
             </div>
           </li>
-          <!-- Languages -->
+
+          <!-- Languages (separate lines + flags) -->
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="language-outline"></ion-icon>
@@ -95,6 +112,7 @@
             <div class="contact-info">
               <p class="contact-title">Languages</p>
               <ul class="contact-link languages-list">
+                <!-- Make sure these images exist in ./assets/images/ -->
                 <li>
                   <img src="./assets/images/flag-en.png" alt="English" width="20" />
                   English (Native)
@@ -111,10 +129,12 @@
             </div>
           </li>
         </ul>
+
         <div class="separator"></div>
+
         <ul class="social-list">
           <li class="social-item">
-            <a href="https://github.com/NicholasPannunzio" target="_blank" class="social-link">
+            <a href="https://github.com/NicholasPannun" target="_blank" class="social-link">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
@@ -129,13 +149,22 @@
 
     <!-- MAIN CONTENT -->
     <div class="main-content">
+
       <!-- NAVBAR -->
       <nav class="navbar">
         <ul class="navbar-list">
-          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Experience</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Projects</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
         </ul>
       </nav>
 
@@ -144,83 +173,94 @@
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
+
+        <!-- UPDATED about-text -->
         <section class="about-text">
           <p>
-            Bilingual Bachelor of Electrical Engineering (BEE) graduate with practical experience as an Electrical
-            Engineering Intern at a premier electronics manufacturer. Accomplished project coordinator and certified
-            Scrum Master with a proven history of leading teams to successfully achieve project milestones and deliverables.
-            Currently responsible for the delivery and support of multiple client applications, including the maintenance
+            Bilingual Bachelor of Electrical Engineering (BEE) graduate with practical experience as an Electrical 
+            Engineering Intern at a premier electronics manufacturer. Accomplished project coordinator and certified 
+            Scrum Master with a proven history of leading teams to successfully achieve project milestones and deliverables. 
+            Currently responsible for the delivery and support of multiple client applications, including the maintenance 
             of a CGI IP product utilized by 90,000 global CGI members and external clients.
           </p>
           <p>
-            Possesses a comprehensive understanding of electrical engineering principles, industry-standard circuit design,
-            testing tools, and telecommunication network operations. Proficient in technical design tools such as MATLAB,
+            Possesses a comprehensive understanding of electrical engineering principles, industry-standard circuit design, 
+            testing tools, and telecommunication network operations. Proficient in technical design tools such as MATLAB, 
             Feko, OrCAD PSPICE, and AutoCAD, as well as network monitoring tools like Cisco Packet Tracer.
           </p>
-          <p>Highly skilled in the Microsoft Office Suite.</p>
           <p>
-            Expert in web and mobile development principles, continuously leveraging this expertise to enhance the CGI IP product.
+            Highly skilled in the Microsoft Office Suite. 
           </p>
           <p>
-            Proficient in UI/UX design, utilizing tools such as Figma and Adobe XD to create high-fidelity, interactive designs that provide visual guidance for platform improvements.
+            Expert in web and mobile development principles, continuously leveraging this expertise to enhance the CGI IP 
+            product.
           </p>
           <p>
-            Solid foundation in data analytics, using applications like PowerBI to prepare client reports and create insightful dashboards for the IP’s web and mobile applications. Passionate about management and technology, demonstrated by the development of an IoT device for dragon boat athletes to monitor performance metrics and provide essential data to coaches.
+            Proficient in UI/UX design, utilizing tools such as Figma and Adobe XD to create high-fidelity, interactive 
+            designs that provide visual guidance for platform improvements.
+          </p>
+          <p>
+            Solid foundation in data analytics, using applications like PowerBI to prepare client reports and create 
+            insightful dashboards for the IP’s web and mobile applications.
+            Passionate about management and technology, demonstrated by the development of an IoT device for dragon boat 
+            athletes to monitor performance metrics and provide essential data to coaches.
           </p>
         </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Recommendations</h3>
+          <ul class="testimonials-list has-scrollbar">
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Client 1" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Client 1</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Nicholas is a dedicated professional with a keen ability to manage complex projects effectively. His
+                    analytical skills and attention to detail make him an asset to any team.
+                  </p>
+                </div>
+              </div>
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Client 2" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Client 2</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Working with Nicholas was a fantastic experience. He is not only a skilled manager but also a great
+                    communicator. His ability to adapt and solve problems is truly commendable.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- TESTIMONIALS MODAL -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="" width="80" data-modal-img>
+              </figure>
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title></h4>
+              <div data-modal-text>
+                <p></p>
+              </div>
+            </div>
+          </section>
+        </div>
       </article>
-
-      <!-- TESTIMONIALS SECTION -->
-      <section class="testimonials">
-        <h3 class="h3 testimonials-title">Recommendations</h3>
-        <ul class="testimonials-list has-scrollbar">
-          <li class="testimonials-item">
-            <div class="content-card" data-testimonials-item>
-              <figure class="testimonials-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Client 1" width="60" data-testimonials-avatar>
-              </figure>
-              <h4 class="h4 testimonials-item-title" data-testimonials-title>Client 1</h4>
-              <div class="testimonials-text" data-testimonials-text>
-                <p>
-                  Nicholas is a dedicated professional with a keen ability to manage complex projects effectively. His analytical skills and attention to detail make him an asset to any team.
-                </p>
-              </div>
-            </div>
-            <div class="content-card" data-testimonials-item>
-              <figure class="testimonials-avatar-box">
-                <img src="./assets/images/avatar-4.png" alt="Client 2" width="60" data-testimonials-avatar>
-              </figure>
-              <h4 class="h4 testimonials-item-title" data-testimonials-title>Client 2</h4>
-              <div class="testimonials-text" data-testimonials-text>
-                <p>
-                  Working with Nicholas was a fantastic experience. He is not only a skilled manager but also a great communicator. His ability to adapt and solve problems is truly commendable.
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <!-- TESTIMONIALS MODAL -->
-      <div class="modal-container" data-modal-container>
-        <div class="overlay" data-overlay></div>
-        <section class="testimonials-modal">
-          <button class="modal-close-btn" data-modal-close-btn>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/avatar-1.png" alt="" width="80" data-modal-img>
-            </figure>
-          </div>
-          <div class="modal-content">
-            <h4 class="h3 modal-title" data-modal-title></h4>
-            <div data-modal-text>
-              <p></p>
-            </div>
-          </div>
-        </section>
-      </div>
 
       <!-- EXPERIENCE SECTION -->
       <article class="experience" data-page="experience">
@@ -229,7 +269,8 @@
         </header>
         <section class="experience-intro">
           <p>
-            With a strong foundation in web development and project management, I have honed my skills across diverse projects—from managing product roadmaps to analyzing data-driven insights.
+            With a strong foundation in web development and project management, I have honed my skills across diverse
+            projects—from managing product roadmaps to analyzing data-driven insights.
           </p>
         </section>
         <section class="timeline">
@@ -258,6 +299,8 @@
             </li>
           </ol>
         </section>
+
+        <!-- Experience Cards -->
         <section class="experience-cards">
           <div class="card">
             <h4 class="card-title">Software Engineer at ABC Corp</h4>
@@ -274,6 +317,8 @@
             </p>
           </div>
         </section>
+
+        <!-- Download CV Button -->
         <div class="download-cv">
           <a href="./assets/files/CV.pdf" download class="btn download-btn">Download CV</a>
         </div>
@@ -301,6 +346,7 @@
               <button data-filter-btn>Critical</button>
             </li>
           </ul>
+
           <div class="filter-select-box">
             <button class="filter-select" data-select>
               <div class="select-value" data-selecct-value>Select category</div>
@@ -320,7 +366,9 @@
               </li>
             </ul>
           </div>
+
           <ul class="project-list">
+            <!-- Example Project 1 -->
             <li class="project-item active" data-filter-item data-category="creative">
               <a href="https://nicholaspannun.github.io/project1/">
                 <figure class="project-img">
@@ -335,6 +383,8 @@
               </a>
               <button class="read-more-btn" onclick="openProjectDetails('project1')">Read More</button>
             </li>
+
+            <!-- Example Project 2 -->
             <li class="project-item active" data-filter-item data-category="critical">
               <a href="https://nicholaspannun.github.io/project2/">
                 <figure class="project-img">
@@ -360,48 +410,13 @@
         </header>
         <section class="contact-form">
           <h3 class="h3 form-title">Get In Touch</h3>
-          <!-- Introductory paragraph -->
-          <p class="form-intro">
-            Please fill in the following fields. Fields marked with 
-            <span class="mandatory-icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
-            are mandatory.
-          </p>
           <form action="#" class="form" data-form>
-            <!-- First Name and Last Name -->
             <div class="input-wrapper">
-              <div class="input-field">
-                <input type="text" name="firstName" class="form-input" placeholder="First Name" required data-form-input>
-                <span class="mandatory-icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
-              </div>
-              <div class="input-field">
-                <input type="text" name="lastName" class="form-input" placeholder="Last Name" required data-form-input>
-                <span class="mandatory-icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
-              </div>
+              <input type="text" name="fullname" class="form-input" placeholder="Your Name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Your Email" required data-form-input>
             </div>
-            <!-- Email and Phone Number -->
-            <div class="input-wrapper">
-              <div class="input-field">
-                <input type="email" name="email" class="form-input" placeholder="Email" required data-form-input>
-                <span class="mandatory-icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
-              </div>
-              <div class="input-field">
-                <input type="tel" name="phone" class="form-input" placeholder="Phone Number (Optional)" data-form-input>
-              </div>
-            </div>
-            <!-- Subject -->
-            <div class="input-wrapper">
-              <div class="input-field">
-                <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input>
-                <span class="mandatory-icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
-              </div>
-            </div>
-            <!-- Your Message -->
-            <div class="input-wrapper">
-              <div class="input-field full-width">
-                <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-                <span class="mandatory-icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
-              </div>
-            </div>
+            <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
@@ -412,6 +427,7 @@
 
     </div> <!-- End of .main-content -->
   </main>
+
   <script src="./assets/js/script.js"></script>
 </body>
 </html>
