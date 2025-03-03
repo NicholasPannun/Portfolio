@@ -31,15 +31,17 @@
     <!-- SIDEBAR -->
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
+        <!-- Your avatar -->
         <figure class="avatar-box">
           <img src="./assets/images/my-avatar.png" alt="Nicholas Pannunzio" width="80" />
         </figure>
 
+        <!-- Name, Title, Toggle -->
         <div class="info-content">
           <h1 class="name" title="Nicholas Pannunzio">Nicholas Pannunzio</h1>
           <p class="title">Project Manager / Product Manager / Data Analyst</p>
 
-          <!-- Dark/Light Mode Toggle from your PowerBI repo -->
+          <!-- Dark/Light Mode Toggle (PowerBI style) -->
           <div class="theme-toggle">
             <label class="switch">
               <input type="checkbox" id="themeToggleCheckbox" />
@@ -48,29 +50,33 @@
           </div>
         </div>
 
+        <!-- Show/Hide Button -->
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contact Info</span>
           <ion-icon name="chevron-down"></ion-icon>
         </button>
       </div>
 
+      <!-- Sidebar expanded content -->
       <div class="sidebar-info_more">
         <div class="separator"></div>
 
         <ul class="contacts-list">
 
-          <!-- EMAIL -->
+          <!-- Email -->
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
             <div class="contact-info">
               <p class="contact-title">Email</p>
-              <a href="mailto:nicholaspannunz@gmail.com" class="contact-link">nicholaspannunz@gmail.com</a>
+              <a href="mailto:nicholaspannunz@gmail.com" class="contact-link">
+                nicholaspannunz@gmail.com
+              </a>
             </div>
           </li>
 
-          <!-- PHONE -->
+          <!-- Phone -->
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -81,7 +87,7 @@
             </div>
           </li>
 
-          <!-- LOCATION -->
+          <!-- Location -->
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
@@ -92,7 +98,7 @@
             </div>
           </li>
 
-          <!-- CERTIFICATIONS -->
+          <!-- Certifications -->
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="ribbon-outline"></ion-icon>
@@ -106,7 +112,7 @@
             </div>
           </li>
 
-          <!-- LANGUAGES -->
+          <!-- Languages with flags -->
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="language-outline"></ion-icon>
@@ -114,7 +120,6 @@
             <div class="contact-info">
               <p class="contact-title">Languages</p>
               <ul class="contact-link languages-list">
-                <!-- Ensure these files exist in ./assets/images/ -->
                 <li>
                   <img src="./assets/images/flag-en.png" alt="English" width="20" />
                   English (Native)
@@ -135,6 +140,7 @@
 
         <div class="separator"></div>
 
+        <!-- Social links -->
         <ul class="social-list">
           <li class="social-item">
             <a href="https://github.com/NicholasPannun" target="_blank" class="social-link">
@@ -171,58 +177,53 @@
         </ul>
       </nav>
 
-      <!-- ABOUT SECTION -->
+      <!-- ABOUT -->
       <article class="about active" data-page="about">
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
-
         <section class="about-text">
           <p>
-            Bilingual Bachelor of Electrical Engineering (BEE) graduate with practical experience as an Electrical 
-            Engineering Intern at a premier electronics manufacturer. Accomplished project coordinator and certified 
-            Scrum Master with a proven history of leading teams to successfully achieve project milestones and deliverables. 
-            Currently responsible for the delivery and support of multiple client applications, including the maintenance 
+            Bilingual Bachelor of Electrical Engineering (BEE) graduate with practical experience as an Electrical
+            Engineering Intern at a premier electronics manufacturer. Accomplished project coordinator and certified
+            Scrum Master with a proven history of leading teams to successfully achieve project milestones and deliverables.
+            Currently responsible for the delivery and support of multiple client applications, including the maintenance
             of a CGI IP product utilized by 90,000 global CGI members and external clients.
           </p>
           <p>
-            Possesses a comprehensive understanding of electrical engineering principles, industry-standard circuit design, 
-            testing tools, and telecommunication network operations. Proficient in technical design tools such as MATLAB, 
+            Possesses a comprehensive understanding of electrical engineering principles, industry-standard circuit design,
+            testing tools, and telecommunication network operations. Proficient in technical design tools such as MATLAB,
             Feko, OrCAD PSPICE, and AutoCAD, as well as network monitoring tools like Cisco Packet Tracer.
           </p>
+          <p>Highly skilled in the Microsoft Office Suite.</p>
           <p>
-            Highly skilled in the Microsoft Office Suite.
-          </p>
-          <p>
-            Expert in web and mobile development principles, continuously leveraging this expertise to enhance the CGI IP 
+            Expert in web and mobile development principles, continuously leveraging this expertise to enhance the CGI IP
             product.
           </p>
           <p>
-            Proficient in UI/UX design, utilizing tools such as Figma and Adobe XD to create high-fidelity, interactive 
+            Proficient in UI/UX design, utilizing tools such as Figma and Adobe XD to create high-fidelity, interactive
             designs that provide visual guidance for platform improvements.
           </p>
           <p>
-            Solid foundation in data analytics, using applications like PowerBI to prepare client reports and create 
-            insightful dashboards for the IP’s web and mobile applications. Passionate about management and technology, 
-            demonstrated by the development of an IoT device for dragon boat athletes to monitor performance metrics and 
+            Solid foundation in data analytics, using applications like PowerBI to prepare client reports and create
+            insightful dashboards for the IP’s web and mobile applications. Passionate about management and technology,
+            demonstrated by the development of an IoT device for dragon boat athletes to monitor performance metrics and
             provide essential data to coaches.
           </p>
         </section>
       </article>
 
-      <!-- EXPERIENCE SECTION -->
+      <!-- EXPERIENCE -->
       <article class="experience" data-page="experience">
         <header>
           <h2 class="h2 article-title">Experience</h2>
         </header>
-
         <section class="experience-intro">
           <p>
             With a strong foundation in web development and project management, I have honed my skills across diverse
             projects—from managing product roadmaps to analyzing data-driven insights.
           </p>
         </section>
-
         <section class="timeline">
           <div class="title-wrapper">
             <div class="icon-box">
@@ -249,13 +250,12 @@
             </li>
           </ol>
         </section>
-
         <section class="experience-cards">
           <div class="card">
             <h4 class="card-title">Software Engineer at ABC Corp</h4>
             <p class="card-duration">Jan 2020 - Present</p>
             <p class="card-description">
-              Developed web applications using modern frameworks, collaborating with cross-functional teams to deliver 
+              Developed web applications using modern frameworks, collaborating with cross-functional teams to deliver
               robust solutions.
             </p>
           </div>
@@ -263,25 +263,24 @@
             <h4 class="card-title">Web Developer Intern at XYZ Inc</h4>
             <p class="card-duration">Jun 2019 - Dec 2019</p>
             <p class="card-description">
-              Assisted in developing and maintaining responsive websites, gaining hands-on experience with front-end 
+              Assisted in developing and maintaining responsive websites, gaining hands-on experience with front-end
               technologies.
             </p>
           </div>
         </section>
-
         <div class="download-cv">
           <a href="./assets/files/CV.pdf" download class="btn download-btn">Download CV</a>
         </div>
       </article>
 
-      <!-- PROJECTS SECTION -->
+      <!-- PROJECTS -->
       <article class="portfolio" data-page="projects">
         <header>
           <h2 class="h2 article-title">Projects</h2>
         </header>
         <section class="projects-intro">
           <p>
-            Welcome to my projects portfolio. Here you will find a selection of projects that demonstrate my skills in 
+            Welcome to my projects portfolio. Here you will find a selection of projects that demonstrate my skills in
             project management, data analysis, and product strategy.
           </p>
         </section>
@@ -302,6 +301,7 @@
               </a>
               <button class="read-more-btn" onclick="openProjectDetails('project1')">Read More</button>
             </li>
+
             <!-- Example Project 2 -->
             <li class="project-item active" data-filter-item data-category="critical">
               <a href="https://nicholaspannun.github.io/project2/">
@@ -321,7 +321,7 @@
         </section>
       </article>
 
-      <!-- CONTACT SECTION -->
+      <!-- CONTACT -->
       <article class="contact" data-page="contact">
         <header>
           <h2 class="h2 article-title">Contact</h2>
