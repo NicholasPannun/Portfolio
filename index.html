@@ -6,16 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nicholas Pannunzio - Portfolio</title>
-  <!-- Ionicons -->
   <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+
   <!-- favicon -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+
   <!-- custom css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
+
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
 </head>
 
 <body>
@@ -25,6 +29,7 @@
 
     <!-- SIDEBAR -->
     <aside class="sidebar" data-sidebar>
+
       <div class="sidebar-info">
         <figure class="avatar-box">
           <img src="./assets/images/my-avatar.png" alt="Nicholas Pannunzio" width="80" />
@@ -34,15 +39,16 @@
           <h1 class="name" title="Nicholas Pannunzio">Nicholas Pannunzio</h1>
           <p class="title">Project Manager / Product Manager / Data Analyst</p>
 
-          <!-- Dark/Light Mode Toggle (PowerBI style) -->
+          <!-- Dark/Light Toggle moved below title and redesigned -->
           <div class="theme-toggle">
-            <label class="switch">
-              <input type="checkbox" id="themeToggleCheckbox">
-              <span class="slider round"></span>
+            <input type="checkbox" id="themeToggleCheckbox" />
+            <label for="themeToggleCheckbox" class="toggle-switch">
+              <span class="toggle-knob"></span>
             </label>
           </div>
         </div>
 
+        <!-- Updated button text -->
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contact Info</span>
           <ion-icon name="chevron-down"></ion-icon>
@@ -73,6 +79,8 @@
             </div>
           </li>
 
+          <!-- Birthday removed -->
+
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
@@ -83,39 +91,25 @@
             </div>
           </li>
 
+          <!-- New Certifications item -->
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="ribbon-outline"></ion-icon>
             </div>
             <div class="contact-info">
               <p class="contact-title">Certifications</p>
-              <ul class="contact-link">
-                <li>Scrum Master I (Obtained May 2021; scrum.org)</li>
-                <li>Membership in the OIQ (Ordre des ingénieurs du Québec)</li>
-              </ul>
+              <p class="contact-link">PMP, Agile Certified</p>
             </div>
           </li>
 
+          <!-- New Languages item -->
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="language-outline"></ion-icon>
             </div>
             <div class="contact-info">
               <p class="contact-title">Languages</p>
-              <ul class="contact-link languages-list">
-                <li>
-                  <img src="./assets/images/flag-en.png" alt="English" width="20" />
-                  English (Native)
-                </li>
-                <li>
-                  <img src="./assets/images/flag-fr.png" alt="French" width="20" />
-                  French (Fluent)
-                </li>
-                <li>
-                  <img src="./assets/images/flag-it.png" alt="Italian" width="20" />
-                  Italian (Professional Working)
-                </li>
-              </ul>
+              <p class="contact-link">English, French</p>
             </div>
           </li>
         </ul>
@@ -124,7 +118,7 @@
 
         <ul class="social-list">
           <li class="social-item">
-            <a href="https://github.com/NicholasPannunzio" target="_blank" class="social-link">
+            <a href="https://github.com/NicholasPannun" target="_blank" class="social-link">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
@@ -143,10 +137,18 @@
       <!-- NAVBAR -->
       <nav class="navbar">
         <ul class="navbar-list">
-          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Experience</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Projects</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
         </ul>
       </nav>
 
@@ -181,60 +183,61 @@
         </section>
       </article>
 
-      <!-- TESTIMONIALS SECTION -->
-      <section class="testimonials">
-        <h3 class="h3 testimonials-title">Recommendations</h3>
-        <ul class="testimonials-list has-scrollbar">
-          <li class="testimonials-item">
-            <div class="content-card" data-testimonials-item>
-              <figure class="testimonials-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Bhavesh Jani" width="60" data-testimonials-avatar>
-              </figure>
-              <h4 class="h4 testimonials-item-title" data-testimonials-title>Bhavesh Jani</h4>
-              <div class="testimonials-text" data-testimonials-text>
-                <p>
-                  I had the pleasure of working with Nicholas on a project. He is a dedicated professional with a keen
-                  ability to manage complex projects effectively. His analytical skills and attention to detail make him an
-                  asset in any team.
-                </p>
+        <!-- TESTIMONIALS SECTION -->
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Recommendations</h3>
+          <ul class="testimonials-list has-scrollbar">
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Bhavesh Jani" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Bhavesh Jani</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I had the pleasure of working with Nicholas on a project. He is a dedicated professional with a keen
+                    ability to manage complex projects effectively. His analytical skills and attention to detail make him an
+                    asset in any team.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="content-card" data-testimonials-item>
-              <figure class="testimonials-avatar-box">
-                <img src="./assets/images/avatar-4.png" alt="Maitrik Patel" width="60" data-testimonials-avatar>
-              </figure>
-              <h4 class="h4 testimonials-item-title" data-testimonials-title>Maitrik Patel</h4>
-              <div class="testimonials-text" data-testimonials-text>
-                <p>
-                  Working with Nicholas was a fantastic experience. He is not only a skilled manager but also a great
-                  communicator. His ability to adapt and solve problems is truly commendable.
-                </p>
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Maitrik Patel" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Maitrik Patel</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Working with Nicholas was a fantastic experience. He is not only a skilled manager but also a great
+                    communicator. His ability to adapt and solve problems is truly commendable.
+                  </p>
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <!-- TESTIMONIALS MODAL -->
-      <div class="modal-container" data-modal-container>
-        <div class="overlay" data-overlay></div>
-        <section class="testimonials-modal">
-          <button class="modal-close-btn" data-modal-close-btn>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-          <div class="modal-img-wrapper">
-            <figure class="modal-avatar-box">
-              <img src="./assets/images/avatar-1.png" alt="" width="80" data-modal-img>
-            </figure>
-          </div>
-          <div class="modal-content">
-            <h4 class="h3 modal-title" data-modal-title></h4>
-            <div data-modal-text>
-              <p></p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </section>
-      </div>
+
+        <!-- TESTIMONIALS MODAL -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="" width="80" data-modal-img>
+              </figure>
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title></h4>
+              <div data-modal-text>
+                <p></p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
 
       <!-- EXPERIENCE SECTION -->
       <article class="experience" data-page="experience">
@@ -243,7 +246,8 @@
         </header>
         <section class="experience-intro">
           <p>
-            With a strong foundation in web development and project management, I have honed my skills across diverse projects—from managing product roadmaps to analyzing data-driven insights.
+            With a strong foundation in web development and project management, I have honed my skills across diverse
+            projects—from managing product roadmaps to analyzing data-driven insights.
           </p>
         </section>
         <section class="timeline">
@@ -272,6 +276,8 @@
             </li>
           </ol>
         </section>
+
+        <!-- Experience Cards -->
         <section class="experience-cards">
           <div class="card">
             <h4 class="card-title">Software Engineer at ABC Corp</h4>
@@ -288,6 +294,8 @@
             </p>
           </div>
         </section>
+
+        <!-- Download CV Button -->
         <div class="download-cv">
           <a href="./assets/files/CV.pdf" download class="btn download-btn">Download CV</a>
         </div>
@@ -363,6 +371,7 @@
               </a>
               <button class="read-more-btn" onclick="openProjectDetails('project2')">Read More</button>
             </li>
+            <!-- Add additional project items as needed -->
           </ul>
         </section>
       </article>
