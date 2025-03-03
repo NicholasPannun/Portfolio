@@ -1882,14 +1882,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
-/*-----------------------------------
-  NEW: Day/Night Toggle Switch Styles
------------------------------------*/
-
+/* -----------------------------------------
+   New: Day/Night Toggle Switch Styles
+----------------------------------------- */
 .theme-toggle {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .theme-toggle input[type="checkbox"] {
@@ -1897,42 +1896,73 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .toggle-switch {
-  width: 80px;
-  height: 35px;
   position: relative;
-  display: inline-block;
-  border-radius: 35px;
-  /* Update path as needed – if style.css is in assets/css, use ../images/ */
-  background: url("../images/night-scene.png") no-repeat center/cover;
+  width: 60px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 15px;
   cursor: pointer;
-  transition: background 0.5s;
+  transition: background-color 0.3s;
+}
+
+/* Using Ionicons pseudo-elements for icons */
+.toggle-switch::before {
+  content: "\f186"; /* Moon icon */
+  font-family: 'Ionicons';
+  position: absolute;
+  left: 8px;
+  top: 6px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.toggle-switch::after {
+  content: "\f1e2"; /* Sun icon */
+  font-family: 'Ionicons';
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  font-size: 18px;
+  color: #ffd700;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .toggle-knob {
   position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 28px;
-  height: 28px;
-  background-color: #9f8af7;
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: all 0.4s ease;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s;
 }
 
 #themeToggleCheckbox:checked + .toggle-switch {
-  background: url("../images/day-scene.png") no-repeat center/cover;
-}
-
-#themeToggleCheckbox:checked + .toggle-switch .toggle-knob {
-  transform: translateX(45px);
   background-color: #ffd700;
 }
 
-/*-----------------------------------
-  NEW: Experience Section Styles
------------------------------------*/
+#themeToggleCheckbox:checked + .toggle-switch .toggle-knob {
+  left: 32px;
+}
 
+#themeToggleCheckbox:checked + .toggle-switch::before {
+  opacity: 0;
+}
+
+#themeToggleCheckbox:checked + .toggle-switch::after {
+  opacity: 1;
+}
+
+/* -----------------------------------------
+   New: Sidebar & Contact Updates
+----------------------------------------- */
+/* (Additional sidebar styling can be added here as needed) */
+
+/* -----------------------------------------
+   New: Experience Section Styles
+----------------------------------------- */
 .experience-intro {
   padding: 20px;
   font-size: 16px;
@@ -1966,10 +1996,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-decoration: none;
 }
 
-/*-----------------------------------
-  NEW: Projects Section Styles
------------------------------------*/
-
+/* -----------------------------------------
+   New: Projects Section Styles
+----------------------------------------- */
 .projects-intro {
   padding: 15px;
   font-size: 16px;
@@ -1992,10 +2021,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   cursor: pointer;
 }
 
-/*-----------------------------------
-  (Existing Light Mode Overrides)
------------------------------------*/
-
+/* -----------------------------------------
+   Existing Light Mode Overrides
+----------------------------------------- */
 body.light-mode {
   background: #ffffff;
   color: #333333;
