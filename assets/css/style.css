@@ -317,12 +317,16 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
-  overflow: hidden;
+  /* Removed max-height so content won't be cut off */
+  /* Removed overflow: hidden for the same reason */
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active {
+  /* Removed max-height here as well */
+  /* So it can expand naturally without cutting off content */
+  transition: var(--transition-2);
+}
 
 .sidebar-info {
   position: relative;
@@ -1330,11 +1334,8 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar {
-    max-height: 180px;
     margin-bottom: 30px;
   }
-
-  .sidebar.active { max-height: 584px; }
 
   .sidebar-info { gap: 25px; }
 
