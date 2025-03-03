@@ -1,4 +1,17 @@
 /*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+
+/**
+ * copyright 2022 @codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
@@ -1870,7 +1883,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 /* -----------------------------------------
-   Redesigned Dark/Light Toggle Switch
+   New: Day/Night Toggle Switch Styles
 ----------------------------------------- */
 .theme-toggle {
   display: flex;
@@ -1892,7 +1905,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   transition: background-color 0.3s;
 }
 
-/* Ionicons pseudo-elements for sun & moon */
+/* Using Ionicons pseudo-elements for icons */
 .toggle-switch::before {
   content: "\f186"; /* Moon icon */
   font-family: 'Ionicons';
@@ -1943,23 +1956,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 /* -----------------------------------------
-   Sidebar & Contact List Updates
+   New: Sidebar & Contact Updates
 ----------------------------------------- */
-.contact-item ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-/* Example for flag icons in .languages-list */
-.languages-list li {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+/* (Additional sidebar styling can be added here as needed) */
 
 /* -----------------------------------------
-   Experience Section Styles
+   New: Experience Section Styles
 ----------------------------------------- */
 .experience-intro {
   padding: 20px;
@@ -1995,7 +1997,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 /* -----------------------------------------
-   Projects Section Styles
+   New: Projects Section Styles
 ----------------------------------------- */
 .projects-intro {
   padding: 15px;
@@ -2020,7 +2022,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 /* -----------------------------------------
-   Light Mode Overrides
+   Existing Light Mode Overrides
 ----------------------------------------- */
 body.light-mode {
   background: #ffffff;
@@ -2036,4 +2038,3 @@ body.light-mode article {
 body.light-mode a {
   color: #0066cc;
 }
-
