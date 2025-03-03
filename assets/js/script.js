@@ -1,15 +1,14 @@
 'use strict';
 
-// Element toggle function
+// Toggle "active" class
 const elementToggleFunc = function (elem) {
   elem.classList.toggle("active");
 };
 
-// Sidebar variables
+// Sidebar show/hide
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
-// Show/hide sidebar contact info
 sidebarBtn.addEventListener("click", function () {
   elementToggleFunc(sidebar);
 });
@@ -53,15 +52,14 @@ document.addEventListener('DOMContentLoaded', function () {
   const themeCheckbox = document.getElementById('themeToggleCheckbox');
   if (themeCheckbox) {
     themeCheckbox.addEventListener('change', function () {
-      // We'll toggle "light-mode" on the body. If you prefer "dark-mode" toggling, adjust as needed.
+      // "light-mode" => user sees #f8f9fa background, #212529 text
       document.body.classList.toggle('light-mode', this.checked);
-      // If you also want a "dark-mode" class, you could do:
-      // document.body.classList.toggle('dark-mode', !this.checked);
+      // If you also want a separate "dark-mode" class, you can do that here.
     });
   }
 });
 
-// Example "Read More" button -> open a details page
+// "Read More" => project details
 function openProjectDetails(projectId) {
   window.location.href = "project-details.html?project=" + projectId;
 }
