@@ -1,14 +1,14 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/* ========== COLOR SCHEME (DaveSimoes) ========== */
+/*===============================
+  DaveSimoes-like Color Scheme
+  (Dark by default, Light on toggle)
+===============================*/
 :root {
-  --dark-bg: #212529;   /* Dark background */
-  --dark-text: #f8f9fa; /* Dark text */
-  --light-bg: #f8f9fa;  /* Light background */
-  --light-text: #212529;/* Light text */
+  --dark-bg: #212529;   /* DaveSimoes dark background */
+  --dark-text: #f8f9fa; /* DaveSimoes dark text */
+  --light-bg: #f8f9fa;  /* DaveSimoes light background */
+  --light-text: #212529;/* DaveSimoes light text */
 
+  /* Additional colors used in your design */
   --orange-yellow-crayola: hsl(45, 100%, 72%);
   --jet: hsl(0, 0%, 22%);
   --eerie-black-2: hsl(240, 2%, 12%);
@@ -38,7 +38,9 @@
   --transition-2: 0.5s ease-in-out;
 }
 
-/* ========== RESET ========== */
+/*===============================
+  RESET
+===============================*/
 *,
 *::before,
 *::after {
@@ -48,11 +50,13 @@
 }
 a { text-decoration: none; }
 li { list-style: none; }
-button { font: inherit; background: none; border: none; cursor: pointer; }
+button { font: inherit; cursor: pointer; }
 :focus { outline-color: var(--orange-yellow-crayola); }
 html { font-family: var(--ff-poppins); }
 
-/* ========== BASE BODY ========== */
+/*===============================
+  BASE BODY (Dark by default)
+===============================*/
 body {
   background-color: var(--dark-bg);
   color: var(--dark-text);
@@ -64,17 +68,21 @@ body.light-mode {
   color: var(--light-text);
 }
 
-/* ========== MAIN ========== */
+/*===============================
+  MAIN
+===============================*/
 main {
   margin: 15px 12px;
   margin-bottom: 75px;
   min-width: 259px;
 }
 
-/* ========== SIDEBAR ========== */
+/*===============================
+  SIDEBAR
+===============================*/
 .sidebar {
-  max-height: none;  /* allow full height */
-  overflow-y: auto;  /* scroll if too tall */
+  max-height: none; /* let it grow fully */
+  overflow-y: auto; /* scroll if needed */
   margin-bottom: 15px;
   border-radius: 20px;
   padding: 15px;
@@ -83,12 +91,14 @@ main {
   background-color: var(--eerie-black-2);
   transition: var(--transition-2);
 }
+
 .sidebar-info {
   display: flex;
   align-items: center;
   gap: 15px;
   position: relative;
 }
+
 .info-content .name {
   font-size: var(--fs-3);
   font-weight: var(--fw-500);
@@ -102,6 +112,7 @@ main {
   padding: 3px 12px;
   border-radius: 8px;
 }
+
 .info_more-btn {
   position: absolute;
   top: -15px;
@@ -111,9 +122,12 @@ main {
   color: var(--orange-yellow-crayola);
   padding: 10px;
   box-shadow: var(--shadow-2);
-  transition: var(--transition-1);
   z-index: 1;
-  background: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+  background: linear-gradient(
+    to bottom right,
+    hsl(0, 0%, 25%) 0%,
+    hsla(0, 0%, 25%, 0) 50%
+  );
 }
 .sidebar-info_more {
   opacity: 0;
@@ -125,7 +139,7 @@ main {
   visibility: visible;
 }
 
-/* CONTACTS */
+/* contact items */
 .contacts-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -154,7 +168,7 @@ main {
   color: var(--dark-text);
 }
 
-/* SOCIAL */
+/* social */
 .social-list {
   display: flex;
   gap: 15px;
@@ -169,7 +183,9 @@ main {
   color: var(--orange-yellow-crayola);
 }
 
-/* ========== NAVBAR ========== */
+/*===============================
+  NAVBAR
+===============================*/
 .navbar {
   position: fixed;
   bottom: 0;
@@ -201,7 +217,9 @@ main {
   color: var(--orange-yellow-crayola);
 }
 
-/* ========== ABOUT ========== */
+/*===============================
+  ABOUT
+===============================*/
 .about-text {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -212,7 +230,10 @@ main {
   margin-bottom: 15px;
 }
 
-/* ========== THEME TOGGLE (PowerBI Repo Style) ========== */
+/*===============================
+  DARK/LIGHT MODE TOGGLE
+  (PowerBI style)
+===============================*/
 .theme-toggle {
   margin-top: 10px;
   text-align: center;
@@ -235,8 +256,8 @@ main {
   border-radius: 34px;
 }
 .slider:before {
-  content: "";
   position: absolute;
+  content: "";
   height: 24px;
   width: 24px;
   left: 3px;
@@ -246,7 +267,7 @@ main {
   border-radius: 50%;
 }
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #2196F3; /* Toggle On color */
 }
 input:focus + .slider {
   box-shadow: 0 0 1px #2196F3;
@@ -261,7 +282,9 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/* ========== EXPERIENCE ========== */
+/*===============================
+  EXPERIENCE
+===============================*/
 .experience-intro {
   padding: 20px;
   font-size: var(--fs-6);
@@ -291,7 +314,9 @@ input:checked + .slider:before {
   text-decoration: none;
 }
 
-/* ========== PROJECTS ========== */
+/*===============================
+  PROJECTS
+===============================*/
 .projects-intro {
   padding: 15px;
   font-size: var(--fs-6);
@@ -301,6 +326,9 @@ input:checked + .slider:before {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
+}
+.project-item {
+  display: none;
 }
 .project-item.active {
   display: block;
@@ -351,7 +379,9 @@ input:checked + .slider:before {
   cursor: pointer;
 }
 
-/* ========== CONTACT ========== */
+/*===============================
+  CONTACT
+===============================*/
 .contact-form {
   margin-bottom: 10px;
   padding: 20px 0;
@@ -387,7 +417,11 @@ input:checked + .slider:before {
   text-transform: capitalize;
   box-shadow: var(--shadow-3);
   transition: var(--transition-1);
-  background: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+  background: linear-gradient(
+    to bottom right,
+    hsl(0, 0%, 25%) 0%,
+    hsla(0, 0%, 25%, 0) 50%
+  );
 }
 .form-btn:disabled {
   opacity: 0.7;
@@ -400,5 +434,3 @@ input:checked + .slider:before {
   background: var(--orange-yellow-crayola);
   color: var(--light-text);
 }
-
-/* end of style.css */
