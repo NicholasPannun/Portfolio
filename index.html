@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -29,7 +28,6 @@
 
     <!-- SIDEBAR -->
     <aside class="sidebar" data-sidebar>
-
       <div class="sidebar-info">
         <figure class="avatar-box">
           <img src="./assets/images/my-avatar.png" alt="Nicholas Pannunzio" width="80" />
@@ -39,7 +37,7 @@
           <h1 class="name" title="Nicholas Pannunzio">Nicholas Pannunzio</h1>
           <p class="title">Project Manager / Product Manager / Data Analyst</p>
 
-          <!-- Dark/Light Toggle moved below title and redesigned -->
+          <!-- Dark/Light Toggle -->
           <div class="theme-toggle">
             <input type="checkbox" id="themeToggleCheckbox" />
             <label for="themeToggleCheckbox" class="toggle-switch">
@@ -48,7 +46,6 @@
           </div>
         </div>
 
-        <!-- Updated button text -->
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contact Info</span>
           <ion-icon name="chevron-down"></ion-icon>
@@ -59,16 +56,19 @@
         <div class="separator"></div>
 
         <ul class="contacts-list">
+          <!-- Email -->
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
             <div class="contact-info">
               <p class="contact-title">Email</p>
+              <!-- mailto link opens the user's default mail client -->
               <a href="mailto:nicholaspannunz@gmail.com" class="contact-link">nicholaspannunz@gmail.com</a>
             </div>
           </li>
 
+          <!-- Phone -->
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -79,8 +79,7 @@
             </div>
           </li>
 
-          <!-- Birthday removed -->
-
+          <!-- Location -->
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
@@ -91,25 +90,42 @@
             </div>
           </li>
 
-          <!-- New Certifications item -->
+          <!-- Certifications (two lines) -->
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="ribbon-outline"></ion-icon>
             </div>
             <div class="contact-info">
               <p class="contact-title">Certifications</p>
-              <p class="contact-link">PMP, Agile Certified</p>
+              <ul class="contact-link">
+                <li>Scrum Master I (Obtained May 2021; scrum.org)</li>
+                <li>Membership in the OIQ (Ordre des ingénieurs du Québec)</li>
+              </ul>
             </div>
           </li>
 
-          <!-- New Languages item -->
+          <!-- Languages (separate lines + flags) -->
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="language-outline"></ion-icon>
             </div>
             <div class="contact-info">
               <p class="contact-title">Languages</p>
-              <p class="contact-link">English, French</p>
+              <ul class="contact-link languages-list">
+                <!-- Make sure these images exist in ./assets/images/ -->
+                <li>
+                  <img src="./assets/images/flag-en.png" alt="English" width="20" />
+                  English (Native)
+                </li>
+                <li>
+                  <img src="./assets/images/flag-fr.png" alt="French" width="20" />
+                  French (Fluent)
+                </li>
+                <li>
+                  <img src="./assets/images/flag-it.png" alt="Italian" width="20" />
+                  Italian (Professional Working)
+                </li>
+              </ul>
             </div>
           </li>
         </ul>
@@ -157,55 +173,62 @@
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
+
+        <!-- UPDATED about-text -->
         <section class="about-text">
           <p>
-            Bilingual Bachelor of Electrical Engineering (BEE) graduate with practical experience as an Electrical
-            Engineering Intern at a premier electronics manufacturer. Accomplished project coordinator and certified
-            Scrum Master with a proven history of leading teams to successfully achieve project milestones and deliverables.
-            Currently responsible for the delivery and support of multiple client applications, including the maintenance
+            Bilingual Bachelor of Electrical Engineering (BEE) graduate with practical experience as an Electrical 
+            Engineering Intern at a premier electronics manufacturer. Accomplished project coordinator and certified 
+            Scrum Master with a proven history of leading teams to successfully achieve project milestones and deliverables. 
+            Currently responsible for the delivery and support of multiple client applications, including the maintenance 
             of a CGI IP product utilized by 90,000 global CGI members and external clients.
           </p>
           <p>
-            Possesses a comprehensive understanding of electrical engineering principles, industry-standard circuit design,
-            testing tools, and telecommunication network operations. Proficient in technical design tools such as MATLAB,
+            Possesses a comprehensive understanding of electrical engineering principles, industry-standard circuit design, 
+            testing tools, and telecommunication network operations. Proficient in technical design tools such as MATLAB, 
             Feko, OrCAD PSPICE, and AutoCAD, as well as network monitoring tools like Cisco Packet Tracer.
           </p>
-          <p>Highly skilled in the Microsoft Office Suite.</p>
           <p>
-            Expert in web and mobile development principles, continuously leveraging this expertise to enhance the CGI IP product.
+            Highly skilled in the Microsoft Office Suite. 
           </p>
           <p>
-            Proficient in UI/UX design, utilizing tools such as Figma and Adobe XD to create high-fidelity, interactive designs that provide visual guidance for platform improvements.
+            Expert in web and mobile development principles, continuously leveraging this expertise to enhance the CGI IP 
+            product.
           </p>
           <p>
-            Solid foundation in data analytics, using applications like PowerBI to prepare client reports and create insightful dashboards for the IP’s web and mobile applications. Passionate about management and technology, demonstrated by the development of an IoT device for dragon boat athletes to monitor performance metrics and provide essential data to coaches.
+            Proficient in UI/UX design, utilizing tools such as Figma and Adobe XD to create high-fidelity, interactive 
+            designs that provide visual guidance for platform improvements.
+          </p>
+          <p>
+            Solid foundation in data analytics, using applications like PowerBI to prepare client reports and create 
+            insightful dashboards for the IP’s web and mobile applications.
+            Passionate about management and technology, demonstrated by the development of an IoT device for dragon boat 
+            athletes to monitor performance metrics and provide essential data to coaches.
           </p>
         </section>
-      </article>
 
-        <!-- TESTIMONIALS SECTION -->
+        <!-- TESTIMONIALS -->
         <section class="testimonials">
           <h3 class="h3 testimonials-title">Recommendations</h3>
           <ul class="testimonials-list has-scrollbar">
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Bhavesh Jani" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-1.png" alt="Client 1" width="60" data-testimonials-avatar>
                 </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Bhavesh Jani</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Client 1</h4>
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    I had the pleasure of working with Nicholas on a project. He is a dedicated professional with a keen
-                    ability to manage complex projects effectively. His analytical skills and attention to detail make him an
-                    asset in any team.
+                    Nicholas is a dedicated professional with a keen ability to manage complex projects effectively. His
+                    analytical skills and attention to detail make him an asset to any team.
                   </p>
                 </div>
               </div>
               <div class="content-card" data-testimonials-item>
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Maitrik Patel" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-4.png" alt="Client 2" width="60" data-testimonials-avatar>
                 </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Maitrik Patel</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Client 2</h4>
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
                     Working with Nicholas was a fantastic experience. He is not only a skilled manager but also a great
@@ -323,6 +346,7 @@
               <button data-filter-btn>Critical</button>
             </li>
           </ul>
+
           <div class="filter-select-box">
             <button class="filter-select" data-select>
               <div class="select-value" data-selecct-value>Select category</div>
@@ -342,7 +366,9 @@
               </li>
             </ul>
           </div>
+
           <ul class="project-list">
+            <!-- Example Project 1 -->
             <li class="project-item active" data-filter-item data-category="creative">
               <a href="https://nicholaspannun.github.io/project1/">
                 <figure class="project-img">
@@ -357,6 +383,8 @@
               </a>
               <button class="read-more-btn" onclick="openProjectDetails('project1')">Read More</button>
             </li>
+
+            <!-- Example Project 2 -->
             <li class="project-item active" data-filter-item data-category="critical">
               <a href="https://nicholaspannun.github.io/project2/">
                 <figure class="project-img">
@@ -371,7 +399,6 @@
               </a>
               <button class="read-more-btn" onclick="openProjectDetails('project2')">Read More</button>
             </li>
-            <!-- Add additional project items as needed -->
           </ul>
         </section>
       </article>
