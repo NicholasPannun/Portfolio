@@ -409,14 +409,30 @@
         </header>
         <section class="contact-form">
           <h3 class="h3 form-title">Get In Touch</h3>
-          <p>Please fill out the form below and I will get back to you as soon as possible.</p>
+          <!-- Introductory paragraph -->
+          <p class="form-intro">Please fill out the form below and I will get back to you as soon as possible.</p>
           <form action="#" class="form" data-form>
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Your Name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Your Email" required data-form-input>
+            <!-- Row 1: First Name and Last Name -->
+            <div class="row">
+              <input type="text" name="firstname" class="form-input" placeholder="First Name" required data-form-input>
+              <input type="text" name="lastname" class="form-input" placeholder="Last Name" required data-form-input>
             </div>
-            <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input>
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <!-- Row 2: Email -->
+            <div class="row">
+              <input type="email" name="email" class="form-input" placeholder="Email" required data-form-input>
+            </div>
+            <!-- Row 3: Phone Number -->
+            <div class="row">
+              <input type="tel" name="phone" class="form-input" placeholder="Phone Number" required data-form-input>
+            </div>
+            <!-- Row 4: Subject -->
+            <div class="row">
+              <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input>
+            </div>
+            <!-- Row 5: Your Message -->
+            <div class="row">
+              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            </div>
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
