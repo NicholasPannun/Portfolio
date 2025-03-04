@@ -31,7 +31,7 @@
     hsl(35, 100%, 68%)
   );
 
-  /* solid colors */
+  /* solid */
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
@@ -240,20 +240,22 @@ main {
   #SIDEBAR
 \*-----------------------------------*/
 
-/* 
-  Keep expand/collapse but allow enough height so text isn't cut off
-*/
+/**
+ * Keep expand/collapse but allow large max-height so text is never cut off
+ */
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;      /* collapsed height */
-  overflow: hidden;       /* hides overflow in collapsed state */
+  max-height: 112px;     /* collapsed height */
+  overflow: hidden;      /* hides content beyond 112px */
   transition: var(--transition-2);
 }
 .sidebar.active {
-  max-height: 9999px;     /* effectively "unlimited" when expanded */
+  max-height: 9999px;    /* effectively "unlimited" */
 }
 
-/* ensure text can wrap in the sidebar */
+/**
+ * Ensure text can wrap so it won't get cut horizontally
+ */
 .info-content,
 .contact-info,
 .contact-info .contact-link {
@@ -797,7 +799,7 @@ main {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
-  font-style: italic; /* category is italicized */
+  font-style: italic; /* italic category */
 }
 .project-subtitle {
   display: flex;
@@ -807,7 +809,7 @@ main {
   margin-top: 5px;
 }
 .project-subtitle-pill {
-  background-color: #F0A500;  /* more subdued orange */
+  background-color: #F0A500; /* more subdued orange */
   color: var(--white-1);
   padding: 2px 8px;
   border-radius: 999px;
@@ -915,7 +917,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   #RESPONSIVE
 \*-----------------------------------*/
 
-/* original media queries below */
+/* original media queries below... */
 
 @media (min-width: 450px) {
   .clients-item { min-width: calc(33.33% - 10px); }
@@ -957,12 +959,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 100px;
   }
   .sidebar {
-    /* remain with collapsed/expanded logic */
-    /* max-height: 112px; */
     margin-bottom: 30px;
-  }
-  .sidebar.active {
-    /* max-height: 9999px; */
   }
   .sidebar-info { gap: 25px; }
   .avatar-box { border-radius: 30px; }
@@ -1134,11 +1131,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 75%;
     margin: 0;
   }
+  /* Removed "height: 100%" so the sidebar can expand fully */
   .sidebar {
     position: sticky;
     top: 60px;
     max-height: max-content;
-    height: 100%;
+    /* height: auto;  <-- to ensure no clipping */
     margin-bottom: 0;
     padding-top: 60px;
     z-index: 1;
@@ -1149,7 +1147,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     white-space: nowrap;
     text-align: center;
   }
-  .info-content .title { margin: auto; }
+  .info_content .title { margin: auto; }
   .info_more-btn { display: none; }
   .sidebar-info_more {
     opacity: 1;
