@@ -153,7 +153,7 @@
       <!-- NAVBAR -->
       <nav class="navbar">
         <ul class="navbar-list">
-          <!-- Match text EXACTLY to data-page in each article -->
+          <!-- Make sure these match the data-page attributes below -->
           <li class="navbar-item">
             <button class="navbar-link active" data-nav-link>About</button>
           </li>
@@ -299,22 +299,20 @@
           </ol>
         </section>
 
-        <!-- Example experience cards -->
+        <!-- Experience Cards -->
         <section class="experience-cards">
           <div class="card">
             <h4 class="card-title">Software Engineer at ABC Corp</h4>
             <p class="card-duration">Jan 2020 - Present</p>
             <p class="card-description">
-              Developed web applications using modern frameworks, collaborating with cross-functional teams to deliver
-              robust solutions.
+              Developed web applications using modern frameworks, collaborating with cross-functional teams to deliver robust solutions.
             </p>
           </div>
           <div class="card">
             <h4 class="card-title">Web Developer Intern at XYZ Inc</h4>
             <p class="card-duration">Jun 2019 - Dec 2019</p>
             <p class="card-description">
-              Assisted in developing and maintaining responsive websites, gaining hands-on experience with front-end
-              technologies.
+              Assisted in developing and maintaining responsive websites, gaining hands-on experience with front-end technologies.
             </p>
           </div>
         </section>
@@ -329,13 +327,17 @@
         <header>
           <h2 class="h2 article-title">Projects</h2>
         </header>
+
+        <!-- Projects Intro: same color as the contact intro. -->
         <section class="projects-intro">
           <p>
-            Welcome to my projects portfolio. Here you will find a selection of projects that demonstrate my skills
-            in project management, data analysis, and product strategy.
+            Welcome to my projects portfolio. Here you will find a selection of projects
+            that demonstrate my skills in project management, data analysis, and product strategy.
           </p>
         </section>
+
         <section class="projects">
+          <!-- Filter list with clickable words (All, Creative, Critical) -->
           <ul class="filter-list">
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
@@ -348,6 +350,8 @@
             </li>
           </ul>
 
+          <!-- Commented out drop-down for future use so it no longer appears in the UI -->
+          <!--
           <div class="filter-select-box">
             <button class="filter-select" data-select>
               <div class="select-value" data-selecct-value>Select category</div>
@@ -367,8 +371,10 @@
               </li>
             </ul>
           </div>
+          -->
 
           <ul class="project-list">
+            <!-- Example Project 1 -->
             <li class="project-item active" data-filter-item data-category="creative">
               <a href="https://nicholaspannun.github.io/project1/">
                 <figure class="project-img">
@@ -384,6 +390,7 @@
               <button class="read-more-btn" onclick="openProjectDetails('project1')">Read More</button>
             </li>
 
+            <!-- Example Project 2 -->
             <li class="project-item active" data-filter-item data-category="critical">
               <a href="https://nicholaspannun.github.io/project2/">
                 <figure class="project-img">
@@ -409,30 +416,16 @@
         </header>
         <section class="contact-form">
           <h3 class="h3 form-title">Get In Touch</h3>
-          <!-- Introductory paragraph -->
-          <p class="form-intro">Please fill out the form below and I will get back to you as soon as possible.</p>
+          <p class="form-intro">
+            Please fill out the form below and I will get back to you as soon as possible.
+          </p>
           <form action="#" class="form" data-form>
-            <!-- Row 1: First Name and Last Name -->
-            <div class="row">
-              <input type="text" name="firstname" class="form-input" placeholder="First Name" required data-form-input>
-              <input type="text" name="lastname" class="form-input" placeholder="Last Name" required data-form-input>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Your Name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Your Email" required data-form-input>
             </div>
-            <!-- Row 2: Email -->
-            <div class="row">
-              <input type="email" name="email" class="form-input" placeholder="Email" required data-form-input>
-            </div>
-            <!-- Row 3: Phone Number -->
-            <div class="row">
-              <input type="tel" name="phone" class="form-input" placeholder="Phone Number" required data-form-input>
-            </div>
-            <!-- Row 4: Subject -->
-            <div class="row">
-              <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input>
-            </div>
-            <!-- Row 5: Your Message -->
-            <div class="row">
-              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            </div>
+            <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
@@ -444,6 +437,7 @@
     </div> <!-- End of .main-content -->
   </main>
 
+  <!-- JS -->
   <script src="./assets/js/script.js"></script>
 </body>
 </html>
