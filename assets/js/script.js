@@ -5,7 +5,7 @@ const elementToggleFunc = function (elem) {
   elem.classList.toggle("active");
 };
 
-// Sidebar Toggle
+// Sidebar
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", function () {
@@ -40,7 +40,7 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
-// Custom Select for Projects Filtering
+// Project Filter
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-selecct-value]");
@@ -105,8 +105,9 @@ const pages = document.querySelectorAll("[data-page]");
 
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
+
+    // Compare nav text in lowercase to each article's data-page
     for (let j = 0; j < pages.length; j++) {
-      // Compare nav text to article data-page
       if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
         pages[j].classList.add("active");
         navigationLinks[j].classList.add("active");
@@ -129,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// Open Project Details
+// "Read More" button
 function openProjectDetails(projectId) {
   window.location.href = "project-details.html?project=" + projectId;
 }
