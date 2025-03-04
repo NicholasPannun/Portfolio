@@ -2,15 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * Key fix: ensure .filter-list is visible 
- * e.g. .filter-list { display: flex; }
- */
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
   /* gradient */
   --bg-gradient-onyx: linear-gradient(
@@ -85,7 +76,10 @@
   --transition-2: 0.5s ease-in-out;
 }
 
-/* RESET */
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
 *,
 *::before,
 *::after {
@@ -634,13 +628,36 @@ main {
 \*-----------------------------------*/
 
 /* 
-  Ensure the filter-list is displayed 
-  so that the "All, Creative, Critical" buttons appear
+  Projects intro paragraph color 
+  matching contact's paragraph color
+*/
+.projects-intro {
+  padding: 15px;
+  font-size: 16px;
+  color: var(--white-2);
+}
+
+/* 
+  Ensure .filter-list is displayed so the filter buttons show
 */
 .filter-list {
   display: flex;
   gap: 15px;
   margin-bottom: 30px;
+}
+
+/* Filter buttons normal vs. active states */
+.filter-list .filter-item button {
+  color: var(--light-gray-70);         /* unselected color */
+  font-size: var(--fs-5);
+  transition: var(--transition-1);
+}
+.filter-list .filter-item button:hover {
+  color: var(--light-gray);            /* hover color */
+}
+.filter-list .filter-item button.active {
+  color: var(--orange-yellow-crayola); /* highlight for active */
+  font-weight: var(--fw-500);
 }
 
 .filter-select-box {
@@ -782,20 +799,6 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
-.project-languages {
-  margin: 5px 0 5px 10px;
-  font-size: var(--fs-7);
-  color: var(--light-gray);
-}
-.read-more-btn {
-  background: var(--orange-yellow-crayola);
-  color: var(--white-1);
-  border: none;
-  padding: 8px 16px;
-  margin: 10px 0 0 10px;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
 /*-----------------------------------*\
   #CONTACT
@@ -903,7 +906,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   #RESPONSIVE
 \*-----------------------------------*/
 
-/* Original media queries */
+/* Original media queries here (unchanged) */
 
 @media (min-width: 450px) {
   .clients-item { min-width: calc(33.33% - 10px); }
@@ -1224,7 +1227,3 @@ body.light-mode article {
 body.light-mode a {
   color: #0066cc;
 }
-
-
-
-
