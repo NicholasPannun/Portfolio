@@ -239,13 +239,27 @@ main {
 /*-----------------------------------*\
   #SIDEBAR
 \*-----------------------------------*/
+
+/* 
+  Keep expand/collapse but allow enough height so text isn't cut off
+*/
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
-  overflow: hidden;
+  max-height: 112px;      /* collapsed height */
+  overflow: hidden;       /* hides overflow in collapsed state */
   transition: var(--transition-2);
 }
-.sidebar.active { max-height: 405px; }
+.sidebar.active {
+  max-height: 9999px;     /* effectively "unlimited" when expanded */
+}
+
+/* ensure text can wrap in the sidebar */
+.info-content,
+.contact-info,
+.contact-info .contact-link {
+  white-space: normal;
+  word-wrap: break-word;
+}
 
 .sidebar-info {
   position: relative;
@@ -288,6 +302,7 @@ main {
   transition: var(--transition-1);
   z-index: 1;
 }
+
 .sidebar-info_more {
   opacity: 0;
   visibility: hidden;
@@ -312,18 +327,12 @@ main {
 .contact-info {
   max-width: calc(100% - 46px);
   width: calc(100% - 46px);
-  white-space: normal;
-  word-wrap: break-word;
 }
 .contact-title {
   color: var(--light-gray-70);
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
-}
-.contact-info :is(.contact-link, time, address) {
-  color: var(--white-2);
-  font-size: var(--fs-7);
 }
 .contact-info address { font-style: normal; }
 
@@ -636,8 +645,6 @@ main {
   gap: 15px;
   margin-bottom: 30px;
 }
-
-/* Updated Filter Buttons */
 .filter-list .filter-item button {
   color: var(--light-gray-70);
   font-size: var(--fs-5);
@@ -651,7 +658,7 @@ main {
   font-weight: var(--fw-500);
 }
 
-/* (Drop-down remains commented out) */
+/* (Drop-down remains commented out in HTML) */
 .filter-select-box {
   position: relative;
   margin-bottom: 25px;
@@ -776,7 +783,7 @@ main {
   transform: scale(1.1);
 }
 
-/* Updated Project Item Text Styling (New Order: Title, Category, Subtitle) */
+/* Project item text styling (title, category, subtitles) */
 .project-title {
   margin-left: 10px;
   color: var(--white-2);
@@ -790,7 +797,7 @@ main {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
-  font-style: italic; /* italicized category */
+  font-style: italic; /* category is italicized */
 }
 .project-subtitle {
   display: flex;
@@ -800,7 +807,7 @@ main {
   margin-top: 5px;
 }
 .project-subtitle-pill {
-  background-color: #F0A500;
+  background-color: #F0A500;  /* more subdued orange */
   color: var(--white-1);
   padding: 2px 8px;
   border-radius: 999px;
@@ -908,6 +915,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   #RESPONSIVE
 \*-----------------------------------*/
 
+/* original media queries below */
+
 @media (min-width: 450px) {
   .clients-item { min-width: calc(33.33% - 10px); }
   .project-img,
@@ -948,10 +957,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 100px;
   }
   .sidebar {
-    max-height: 180px;
+    /* remain with collapsed/expanded logic */
+    /* max-height: 112px; */
     margin-bottom: 30px;
   }
-  .sidebar.active { max-height: 584px; }
+  .sidebar.active {
+    /* max-height: 9999px; */
+  }
   .sidebar-info { gap: 25px; }
   .avatar-box { border-radius: 30px; }
   .avatar-box img { width: 120px; }
@@ -1160,7 +1172,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .social-list { justify-content: center; }
   .timeline-text { max-width: 700px; }
 }
-  
+
 /*-----------------------------------*\
   #DAY/NIGHT TOGGLE
 \*-----------------------------------*/
