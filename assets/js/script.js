@@ -5,14 +5,14 @@ const elementToggleFunc = function (elem) {
   elem.classList.toggle("active");
 };
 
-// Sidebar Toggle Functionality
+// Sidebar Toggle
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", function () {
   elementToggleFunc(sidebar);
 });
 
-// Testimonials Modal Functionality
+// Testimonials Modal
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
@@ -106,6 +106,7 @@ const pages = document.querySelectorAll("[data-page]");
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
     for (let j = 0; j < pages.length; j++) {
+      // Compare nav text to article data-page
       if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
         pages[j].classList.add("active");
         navigationLinks[j].classList.add("active");
@@ -118,7 +119,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-// Dark/Light Mode Toggle via Checkbox
+// Dark/Light Mode Toggle
 document.addEventListener('DOMContentLoaded', function () {
   const themeCheckbox = document.getElementById('themeToggleCheckbox');
   if (themeCheckbox) {
@@ -128,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// Open Project Details Functionality
+// Open Project Details
 function openProjectDetails(projectId) {
   window.location.href = "project-details.html?project=" + projectId;
 }
