@@ -5,7 +5,7 @@ const elementToggleFunc = function (elem) {
   elem.classList.toggle("active");
 };
 
-// Sidebar Toggle Functionality
+// Sidebar Toggle
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 if (sidebarBtn) {
@@ -14,7 +14,7 @@ if (sidebarBtn) {
   });
 }
 
-// Testimonials Modal Functionality
+// Testimonials Modal
 const testimonialsItems = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
@@ -28,17 +28,15 @@ const testimonialsModalFunc = function () {
   overlay.classList.toggle("active");
 };
 
-if (testimonialsItems) {
-  testimonialsItems.forEach(item => {
-    item.addEventListener("click", function () {
-      modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-      modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-      modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-      modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-      testimonialsModalFunc();
-    });
+testimonialsItems.forEach(item => {
+  item.addEventListener("click", function () {
+    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
+    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+    testimonialsModalFunc();
   });
-}
+});
 
 if (modalCloseBtn) {
   modalCloseBtn.addEventListener("click", testimonialsModalFunc);
@@ -47,7 +45,7 @@ if (overlay) {
   overlay.addEventListener("click", testimonialsModalFunc);
 }
 
-// Filtering: Using clickable filter buttons only
+// Filter Buttons (All, Creative, Critical)
 const filterButtons = document.querySelectorAll("[data-filter-btn]");
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
@@ -62,57 +60,52 @@ const filterFunc = function (selectedValue) {
 };
 
 let lastClickedBtn = filterButtons[0];
-if (filterButtons) {
-  filterButtons.forEach(btn => {
-    btn.addEventListener("click", function () {
-      const selectedValue = this.innerText.toLowerCase();
-      filterFunc(selectedValue);
-      if (lastClickedBtn) {
-        lastClickedBtn.classList.remove("active");
-      }
-      this.classList.add("active");
-      lastClickedBtn = this;
-    });
+filterButtons.forEach(btn => {
+  btn.addEventListener("click", function () {
+    const selectedValue = this.innerText.toLowerCase();
+    filterFunc(selectedValue);
+
+    if (lastClickedBtn) {
+      lastClickedBtn.classList.remove("active");
+    }
+    this.classList.add("active");
+    lastClickedBtn = this;
   });
-}
+});
 
 // Contact Form Validation
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
 
-if (formInputs) {
-  formInputs.forEach(input => {
-    input.addEventListener("input", function () {
-      if (form.checkValidity()) {
-        formBtn.removeAttribute("disabled");
-      } else {
-        formBtn.setAttribute("disabled", "");
-      }
-    });
+formInputs.forEach(input => {
+  input.addEventListener("input", function () {
+    if (form.checkValidity()) {
+      formBtn.removeAttribute("disabled");
+    } else {
+      formBtn.setAttribute("disabled", "");
+    }
   });
-}
+});
 
 // Page Navigation
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-if (navigationLinks) {
-  navigationLinks.forEach((navLink, index) => {
-    navLink.addEventListener("click", function () {
-      pages.forEach((page, i) => {
-        if (this.innerHTML.toLowerCase() === page.dataset.page) {
-          page.classList.add("active");
-          navigationLinks[i].classList.add("active");
-          window.scrollTo(0, 0);
-        } else {
-          page.classList.remove("active");
-          navigationLinks[i].classList.remove("active");
-        }
-      });
+navigationLinks.forEach((navLink, i) => {
+  navLink.addEventListener("click", function () {
+    pages.forEach((page, j) => {
+      if (this.innerHTML.toLowerCase() === page.dataset.page) {
+        page.classList.add("active");
+        navigationLinks[j].classList.add("active");
+        window.scrollTo(0, 0);
+      } else {
+        page.classList.remove("active");
+        navigationLinks[j].classList.remove("active");
+      }
     });
   });
-}
+});
 
 // Dark/Light Mode Toggle
 document.addEventListener('DOMContentLoaded', function () {
@@ -124,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// Open Project Details Functionality
+// "Read More" button (optional)
 function openProjectDetails(projectId) {
   window.location.href = "project-details.html?project=" + projectId;
 }
