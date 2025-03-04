@@ -309,86 +309,75 @@
           </div>
         </article>
 
-        <!-- PROJECTS SECTION -->
-        <article class="portfolio" data-page="projects">
-          <header>
-            <h2 class="h2 article-title">Projects</h2>
-          </header>
-          <!-- Projects Intro -->
-          <section class="projects-intro">
-            <p>
-              Welcome to my projects portfolio. Here you will find a selection of projects that demonstrate my skills in project management, data analysis, and product strategy.
-            </p>
-          </section>
-          <section class="projects">
-            <!-- Filter Buttons -->
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
-              <li class="filter-item">
-                <button data-filter-btn>Creative</button>
-              </li>
-              <li class="filter-item">
-                <button data-filter-btn>Critical</button>
-              </li>
-            </ul>
-            <!-- (Drop-down for future use is commented out) -->
-            <!--
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>Select category</div>
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-              </button>
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-                <li class="select-item">
-                  <button data-select-item>Creative</button>
-                </li>
-                <li class="select-item">
-                  <button data-select-item>Critical</button>
-                </li>
-              </ul>
+<!-- PROJECTS SECTION (data-page="projects") -->
+<article class="portfolio" data-page="projects">
+  <header>
+    <h2 class="h2 article-title">Projects</h2>
+  </header>
+  <!-- Projects Intro -->
+  <section class="projects-intro">
+    <p>
+      Welcome to my projects portfolio. Here you will find a selection of projects that demonstrate my skills in project management, data analysis, and product strategy.
+    </p>
+  </section>
+  <section class="projects">
+    <!-- Filter Buttons (if you use them) -->
+    <ul class="filter-list">
+      <li class="filter-item">
+        <button class="active" data-filter-btn>All</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Creative</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Critical</button>
+      </li>
+    </ul>
+    <!-- (Drop-down remains commented out for future use) -->
+    <!-- Project List -->
+    <ul class="project-list">
+      <!-- Project Item 1 -->
+      <li class="project-item active" data-filter-item data-category="creative">
+        <a href="https://nicholaspannun.github.io/project1/">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
             </div>
-            -->
-            <ul class="project-list">
-              <!-- Project Item 1 -->
-              <li class="project-item active" data-filter-item data-category="creative">
-                <a href="https://nicholaspannun.github.io/project1/">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img src="./assets/images/project-1.png" alt="Project 1" loading="lazy" />
-                  </figure>
-                  <h3 class="project-title">Project 1</h3>
-                  <p class="project-subtitle">HTML, CSS, JavaScript</p>
-                  <p class="project-category">Website</p>
-                </a>
-                <button class="read-more-btn" onclick="openProjectDetails('project1')">Read More</button>
-              </li>
-              <!-- Project Item 2 -->
-              <li class="project-item active" data-filter-item data-category="critical">
-                <a href="https://nicholaspannun.github.io/project2/">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img src="./assets/images/project-2.png" alt="Project 2" loading="lazy" />
-                  </figure>
-                  <h3 class="project-title">Project 2</h3>
-                  <p class="project-subtitle">HTML, CSS, JavaScript</p>
-                  <p class="project-category">Website</p>
-                </a>
-                <button class="read-more-btn" onclick="openProjectDetails('project2')">Read More</button>
-              </li>
-            </ul>
-          </section>
-        </article>
+            <img src="./assets/images/project-1.png" alt="Project 1" loading="lazy" />
+          </figure>
+          <!-- New order: Title, Category, then Subtitle Pills -->
+          <h3 class="project-title">Project 1</h3>
+          <p class="project-category">Website</p>
+          <div class="project-subtitle">
+            <span class="project-subtitle-pill">HTML</span>
+            <span class="project-subtitle-pill">CSS</span>
+            <span class="project-subtitle-pill">JavaScript</span>
+          </div>
+        </a>
+        <button class="read-more-btn" onclick="openProjectDetails('project1')">Read More</button>
+      </li>
+      <!-- Project Item 2 -->
+      <li class="project-item active" data-filter-item data-category="critical">
+        <a href="https://nicholaspannun.github.io/project2/">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/project-2.png" alt="Project 2" loading="lazy" />
+          </figure>
+          <h3 class="project-title">Project 2</h3>
+          <p class="project-category">Website</p>
+          <div class="project-subtitle">
+            <span class="project-subtitle-pill">HTML</span>
+            <span class="project-subtitle-pill">CSS</span>
+            <span class="project-subtitle-pill">JavaScript</span>
+          </div>
+        </a>
+        <button class="read-more-btn" onclick="openProjectDetails('project2')">Read More</button>
+      </li>
+    </ul>
+  </section>
+</article>
 
         <!-- CONTACT SECTION -->
         <article class="contact" data-page="contact">
