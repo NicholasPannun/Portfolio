@@ -1,451 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nicholas Pannunzio - Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicholas Pannunzio - Portfolio</title>
 
-  <!-- Ionicons -->
-  <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <!-- Ionicons -->
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
 
-  <!-- custom css -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-
-  <!-- MAIN -->
-  <main>
-
-    <!-- SIDEBAR -->
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Nicholas Pannunzio" width="80" />
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Nicholas Pannunzio">Nicholas Pannunzio</h1>
-          <p class="title">Project Manager / Product Manager / Data Analyst</p>
-
-          <!-- Dark/Light Mode Toggle -->
-          <div class="theme-toggle">
-            <label class="switch">
-              <input type="checkbox" id="themeToggleCheckbox">
-              <span class="slider round"></span>
-            </label>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- MAIN -->
+    <main>
+      <!-- SIDEBAR -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/my-avatar.png" alt="Nicholas Pannunzio" width="80" />
+          </figure>
+          <div class="info-content">
+            <h1 class="name" title="Nicholas Pannunzio">Nicholas Pannunzio</h1>
+            <p class="title">Project Manager / Product Manager / Data Analyst</p>
+            <!-- Dark/Light Mode Toggle -->
+            <div class="theme-toggle">
+              <label class="switch">
+                <input type="checkbox" id="themeToggleCheckbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
           </div>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contact Info</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contact Info</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
-
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-          <!-- Email -->
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:nicholaspannunz@gmail.com" class="contact-link">nicholaspannunz@gmail.com</a>
-            </div>
-          </li>
-
-          <!-- Phone -->
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+15142428190" class="contact-link">(514) 242-8190</a>
-            </div>
-          </li>
-
-          <!-- Location -->
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Montreal, Quebec</address>
-            </div>
-          </li>
-
-          <!-- Certifications -->
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="ribbon-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Certifications</p>
-              <ul class="contact-link">
-                <li>Scrum Master I (Obtained May 2021; scrum.org)</li>
-                <li>Membership in the OIQ (Ordre des ingénieurs du Québec)</li>
-              </ul>
-            </div>
-          </li>
-
-          <!-- Languages -->
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="language-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Languages</p>
-              <ul class="contact-link languages-list">
-                <li>
-                  <img src="./assets/images/flag-en.png" alt="English" width="20" />
-                  English (Native)
-                </li>
-                <li>
-                  <img src="./assets/images/flag-fr.png" alt="French" width="20" />
-                  French (Fluent)
-                </li>
-                <li>
-                  <img src="./assets/images/flag-it.png" alt="Italian" width="20" />
-                  Italian (Professional Working)
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://github.com/NicholasPannunzio" target="_blank" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/nicholas-p-5133b81a2/" target="_blank" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
-
-      <!-- NAVBAR -->
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <!-- The nav text must exactly match the articles' data-page values -->
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Experience</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- ABOUT SECTION -->
-      <article class="about active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-        <section class="about-text">
-          <p>
-            Bilingual Bachelor of Electrical Engineering (BEE) graduate with practical experience as an Electrical
-            Engineering Intern at a premier electronics manufacturer. Accomplished project coordinator and certified
-            Scrum Master with a proven history of leading teams to successfully achieve project milestones and deliverables.
-            Currently responsible for the delivery and support of multiple client applications, including the maintenance
-            of a CGI IP product utilized by 90,000 global CGI members and external clients.
-          </p>
-          <p>
-            Possesses a comprehensive understanding of electrical engineering principles, industry-standard circuit design,
-            testing tools, and telecommunication network operations. Proficient in technical design tools such as MATLAB,
-            Feko, OrCAD PSPICE, and AutoCAD, as well as network monitoring tools like Cisco Packet Tracer.
-          </p>
-          <p>
-            Highly skilled in the Microsoft Office Suite.
-          </p>
-          <p>
-            Expert in web and mobile development principles, continuously leveraging this expertise to enhance the CGI IP
-            product.
-          </p>
-          <p>
-            Proficient in UI/UX design, utilizing tools such as Figma and Adobe XD to create high-fidelity, interactive
-            designs that provide visual guidance for platform improvements.
-          </p>
-          <p>
-            Solid foundation in data analytics, using applications like PowerBI to prepare client reports and create
-            insightful dashboards for the IP’s web and mobile applications. Passionate about management and technology,
-            demonstrated by the development of an IoT device for dragon boat athletes to monitor performance metrics and
-            provide essential data to coaches.
-          </p>
-        </section>
-
-        <!-- TESTIMONIALS SECTION -->
-        <section class="testimonials">
-          <h3 class="h3 testimonials-title">Recommendations</h3>
-          <ul class="testimonials-list has-scrollbar">
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Client 1" width="60" data-testimonials-avatar>
-                </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Client 1</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Nicholas is a dedicated professional with a keen ability to manage complex projects effectively. His
-                    analytical skills and attention to detail make him an asset to any team.
-                  </p>
-                </div>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <!-- Email -->
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
               </div>
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Client 2" width="60" data-testimonials-avatar>
-                </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Client 2</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Working with Nicholas was a fantastic experience. He is not only a skilled manager but also a great
-                    communicator. His ability to adapt and solve problems is truly commendable.
-                  </p>
-                </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:nicholaspannunz@gmail.com" class="contact-link">nicholaspannunz@gmail.com</a>
+              </div>
+            </li>
+            <!-- Phone -->
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+15142428190" class="contact-link">(514) 242-8190</a>
+              </div>
+            </li>
+            <!-- Location -->
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Montreal, Quebec</address>
+              </div>
+            </li>
+            <!-- Certifications -->
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="ribbon-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Certifications</p>
+                <ul class="contact-link">
+                  <li>Scrum Master I (Obtained May 2021; scrum.org)</li>
+                  <li>Membership in the OIQ (Ordre des ingénieurs du Québec)</li>
+                </ul>
+              </div>
+            </li>
+            <!-- Languages -->
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="language-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Languages</p>
+                <ul class="contact-link languages-list">
+                  <li>
+                    <img src="./assets/images/flag-en.png" alt="English" width="20" />
+                    English (Native)
+                  </li>
+                  <li>
+                    <img src="./assets/images/flag-fr.png" alt="French" width="20" />
+                    French (Fluent)
+                  </li>
+                  <li>
+                    <img src="./assets/images/flag-it.png" alt="Italian" width="20" />
+                    Italian (Professional Working)
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
-        </section>
+          <div class="separator"></div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://github.com/NicholasPannunzio" target="_blank" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/nicholas-p-5133b81a2/" target="_blank" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-        <!-- TESTIMONIALS MODAL -->
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="" width="80" data-modal-img>
-              </figure>
-            </div>
-            <div class="modal-content">
-              <h4 class="h3 modal-title" data-modal-title></h4>
-              <div data-modal-text>
-                <p></p>
-              </div>
-            </div>
+      <!-- MAIN CONTENT -->
+      <div class="main-content">
+        <!-- NAVBAR -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <!-- Ensure these exactly match the data-page attributes -->
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Experience</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- ABOUT SECTION -->
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+          <section class="about-text">
+            <p>
+              Bilingual Bachelor of Electrical Engineering (BEE) graduate with practical experience as an Electrical
+              Engineering Intern at a premier electronics manufacturer. Accomplished project coordinator and certified
+              Scrum Master with a proven history of leading teams to successfully achieve project milestones and deliverables.
+              Currently responsible for the delivery and support of multiple client applications, including the maintenance
+              of a CGI IP product utilized by 90,000 global CGI members and external clients.
+            </p>
+            <p>
+              Possesses a comprehensive understanding of electrical engineering principles, industry-standard circuit design,
+              testing tools, and telecommunication network operations. Proficient in technical design tools such as MATLAB,
+              Feko, OrCAD PSPICE, and AutoCAD, as well as network monitoring tools like Cisco Packet Tracer.
+            </p>
+            <p>
+              Highly skilled in the Microsoft Office Suite.
+            </p>
+            <p>
+              Expert in web and mobile development principles, continuously leveraging this expertise to enhance the CGI IP
+              product.
+            </p>
+            <p>
+              Proficient in UI/UX design, utilizing tools such as Figma and Adobe XD to create high-fidelity, interactive
+              designs that provide visual guidance for platform improvements.
+            </p>
+            <p>
+              Solid foundation in data analytics, using applications like PowerBI to prepare client reports and create
+              insightful dashboards for the IP’s web and mobile applications. Passionate about management and technology,
+              demonstrated by the development of an IoT device for dragon boat athletes to monitor performance metrics and
+              provide essential data to coaches.
+            </p>
           </section>
-        </div>
-      </article>
 
-      <!-- EXPERIENCE SECTION -->
-      <article class="experience" data-page="experience">
-        <header>
-          <h2 class="h2 article-title">Experience</h2>
-        </header>
-        <section class="experience-intro">
-          <p>
-            With a strong foundation in web development and project management, I have honed my skills across diverse
-            projects—from managing product roadmaps to analyzing data-driven insights.
-          </p>
-        </section>
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Education</h3>
-          </div>
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">SAL Institute of Technology And Engineering Research</h4>
-              <span>Present — 2023 June</span>
-              <p class="timeline-text">
-                Bachelor of Engineering - Computer Engineering<br>
-                Grade: First Class with Distinction
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Ranchhodlal Chhotalal (R.C.) Technical Institute</h4>
-              <span>2023 June — 2020 June</span>
-              <p class="timeline-text">
-                Diploma in Engineering - Computer Engineering<br>
-                Grade: First Class with Distinction
-              </p>
-            </li>
-          </ol>
-        </section>
-
-        <!-- Experience Cards -->
-        <section class="experience-cards">
-          <div class="card">
-            <h4 class="card-title">Software Engineer at ABC Corp</h4>
-            <p class="card-duration">Jan 2020 - Present</p>
-            <p class="card-description">
-              Developed web applications using modern frameworks, collaborating with cross-functional teams to deliver robust solutions.
-            </p>
-          </div>
-          <div class="card">
-            <h4 class="card-title">Web Developer Intern at XYZ Inc</h4>
-            <p class="card-duration">Jun 2019 - Dec 2019</p>
-            <p class="card-description">
-              Assisted in developing and maintaining responsive websites, gaining hands-on experience with front-end technologies.
-            </p>
-          </div>
-        </section>
-
-        <div class="download-cv">
-          <a href="./assets/files/CV.pdf" download class="btn download-btn">Download CV</a>
-        </div>
-      </article>
-
-      <!-- PROJECTS SECTION -->
-      <article class="portfolio" data-page="projects">
-        <header>
-          <h2 class="h2 article-title">Projects</h2>
-        </header>
-
-        <!-- Projects Intro (color matched to Contact) -->
-        <section class="projects-intro">
-          <p>
-            Welcome to my projects portfolio. Here you will find a selection of projects that demonstrate my skills in project management, data analysis, and product strategy.
-          </p>
-        </section>
-
-        <section class="projects">
-          <!-- Filter list with clickable words -->
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Creative</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Critical</button>
-            </li>
-          </ul>
-
-          <!-- Drop-down menu commented out for future use -->
-          <!--
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>Select category</div>
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Creative</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Critical</button>
+          <!-- TESTIMONIALS SECTION -->
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Recommendations</h3>
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img src="./assets/images/avatar-1.png" alt="Client 1" width="60" data-testimonials-avatar />
+                  </figure>
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Client 1</h4>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Nicholas is a dedicated professional with a keen ability to manage complex projects effectively.
+                      His analytical skills and attention to detail make him an asset to any team.
+                    </p>
+                  </div>
+                </div>
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img src="./assets/images/avatar-4.png" alt="Client 2" width="60" data-testimonials-avatar />
+                  </figure>
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Client 2</h4>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Working with Nicholas was a fantastic experience. He is not only a skilled manager but also a great
+                      communicator. His ability to adapt and solve problems is truly commendable.
+                    </p>
+                  </div>
+                </div>
               </li>
             </ul>
+          </section>
+
+          <!-- TESTIMONIALS MODAL -->
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="" width="80" data-modal-img />
+                </figure>
+              </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title></h4>
+                <div data-modal-text>
+                  <p></p>
+                </div>
+              </div>
+            </section>
           </div>
-          -->
+        </article>
 
-          <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="creative">
-              <a href="https://nicholaspannun.github.io/project1/">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-1.png" alt="Project 1" loading="lazy">
-                </figure>
-                <h3 class="project-title">Project 1</h3>
-                <p class="project-languages">HTML, CSS, JavaScript</p>
-                <p class="project-category">Website</p>
-              </a>
-              <button class="read-more-btn" onclick="openProjectDetails('project1')">Read More</button>
-            </li>
-            <li class="project-item active" data-filter-item data-category="critical">
-              <a href="https://nicholaspannun.github.io/project2/">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-2.png" alt="Project 2" loading="lazy">
-                </figure>
-                <h3 class="project-title">Project 2</h3>
-                <p class="project-languages">HTML, CSS, JavaScript</p>
-                <p class="project-category">Website</p>
-              </a>
-              <button class="read-more-btn" onclick="openProjectDetails('project2')">Read More</button>
-            </li>
-          </ul>
-        </section>
-      </article>
+        <!-- EXPERIENCE SECTION -->
+        <article class="experience" data-page="experience">
+          <header>
+            <h2 class="h2 article-title">Experience</h2>
+          </header>
+          <section class="experience-intro">
+            <p>
+              With a strong foundation in web development and project management, I have honed my skills across diverse
+              projects—from managing product roadmaps to analyzing data-driven insights.
+            </p>
+          </section>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  SAL Institute of Technology And Engineering Research
+                </h4>
+                <span>Present — 2023 June</span>
+                <p class="timeline-text">
+                  Bachelor of Engineering - Computer Engineering<br />
+                  Grade: First Class with Distinction
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Ranchhodlal Chhotalal (R.C.) Technical Institute
+                </h4>
+                <span>2023 June — 2020 June</span>
+                <p class="timeline-text">
+                  Diploma in Engineering - Computer Engineering<br />
+                  Grade: First Class with Distinction
+                </p>
+              </li>
+            </ol>
+          </section>
+          <!-- Experience Cards -->
+          <section class="experience-cards">
+            <div class="card">
+              <h4 class="card-title">Software Engineer at ABC Corp</h4>
+              <p class="card-duration">Jan 2020 - Present</p>
+              <p class="card-description">
+                Developed web applications using modern frameworks, collaborating with cross-functional teams to deliver robust solutions.
+              </p>
+            </div>
+            <div class="card">
+              <h4 class="card-title">Web Developer Intern at XYZ Inc</h4>
+              <p class="card-duration">Jun 2019 - Dec 2019</p>
+              <p class="card-description">
+                Assisted in developing and maintaining responsive websites, gaining hands-on experience with front-end technologies.
+              </p>
+            </div>
+          </section>
+          <div class="download-cv">
+            <a href="./assets/files/CV.pdf" download class="btn download-btn">Download CV</a>
+          </div>
+        </article>
 
-      <!-- CONTACT SECTION -->
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-        <section class="contact-form">
-          <h3 class="h3 form-title">Get In Touch</h3>
-          <p class="form-intro">Please fill out the form below and I will get back to you as soon as possible.</p>
-          <form action="#" class="form" data-form>
-            <!-- Row 1: First Name and Last Name -->
-            <div class="row">
-              <input type="text" name="firstname" class="form-input" placeholder="First Name" required data-form-input>
-              <input type="text" name="lastname" class="form-input" placeholder="Last Name" required data-form-input>
+        <!-- PROJECTS SECTION -->
+        <article class="portfolio" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+          <!-- Projects Intro -->
+          <section class="projects-intro">
+            <p>
+              Welcome to my projects portfolio. Here you will find a selection of projects that demonstrate my skills in project management, data analysis, and product strategy.
+            </p>
+          </section>
+          <section class="projects">
+            <!-- Filter Buttons -->
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Creative</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Critical</button>
+              </li>
+            </ul>
+            <!-- (Drop-down for future use is commented out) -->
+            <!--
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>Select category</div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Creative</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Critical</button>
+                </li>
+              </ul>
             </div>
-            <!-- Row 2: Email -->
-            <div class="row">
-              <input type="email" name="email" class="form-input" placeholder="Email" required data-form-input>
-            </div>
-            <!-- Row 3: Phone Number -->
-            <div class="row">
-              <input type="tel" name="phone" class="form-input" placeholder="Phone Number" required data-form-input>
-            </div>
-            <!-- Row 4: Subject -->
-            <div class="row">
-              <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input>
-            </div>
-            <!-- Row 5: Your Message -->
-            <div class="row">
-              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            </div>
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
-      </article>
+            -->
+            <ul class="project-list">
+              <!-- Project Item 1 -->
+              <li class="project-item active" data-filter-item data-category="creative">
+                <a href="https://nicholaspannun.github.io/project1/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/project-1.png" alt="Project 1" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">Project 1</h3>
+                  <p class="project-subtitle">HTML, CSS, JavaScript</p>
+                  <p class="project-category">Website</p>
+                </a>
+                <button class="read-more-btn" onclick="openProjectDetails('project1')">Read More</button>
+              </li>
+              <!-- Project Item 2 -->
+              <li class="project-item active" data-filter-item data-category="critical">
+                <a href="https://nicholaspannun.github.io/project2/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/project-2.png" alt="Project 2" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">Project 2</h3>
+                  <p class="project-subtitle">HTML, CSS, JavaScript</p>
+                  <p class="project-category">Website</p>
+                </a>
+                <button class="read-more-btn" onclick="openProjectDetails('project2')">Read More</button>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-    </div> <!-- End of .main-content -->
-  </main>
+        <!-- CONTACT SECTION -->
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Get In Touch</h3>
+            <p class="form-intro">Please fill out the form below and I will get back to you as soon as possible.</p>
+            <form action="#" class="form" data-form>
+              <!-- Row 1: First Name and Last Name -->
+              <div class="row">
+                <input type="text" name="firstname" class="form-input" placeholder="First Name" required data-form-input />
+                <input type="text" name="lastname" class="form-input" placeholder="Last Name" required data-form-input />
+              </div>
+              <!-- Row 2: Email -->
+              <div class="row">
+                <input type="email" name="email" class="form-input" placeholder="Email" required data-form-input />
+              </div>
+              <!-- Row 3: Phone Number -->
+              <div class="row">
+                <input type="tel" name="phone" class="form-input" placeholder="Phone Number" required data-form-input />
+              </div>
+              <!-- Row 4: Subject -->
+              <div class="row">
+                <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input />
+              </div>
+              <!-- Row 5: Your Message -->
+              <div class="row">
+                <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+              </div>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div> <!-- End of .main-content -->
+    </main>
 
-  <script src="./assets/js/script.js"></script>
-</body>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
