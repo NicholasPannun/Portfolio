@@ -80,9 +80,7 @@
   #RESET
 \*-----------------------------------*/
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -300,6 +298,7 @@ main {
   opacity: 1;
   visibility: visible;
 }
+
 .contacts-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -322,6 +321,10 @@ main {
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
+}
+.contact-info :is(.contact-link, time, address) {
+  color: var(--white-2);
+  font-size: var(--fs-7);
 }
 .contact-info address { font-style: normal; }
 
@@ -368,12 +371,8 @@ main {
   transition: color var(--transition-1);
 }
 .navbar-link:hover,
-.navbar-link:focus {
-  color: var(--light-gray-70);
-}
-.navbar-link.active {
-  color: var(--orange-yellow-crayola);
-}
+.navbar-link:focus { color: var(--light-gray-70); }
+.navbar-link.active { color: var(--orange-yellow-crayola); }
 
 /*-----------------------------------*\
   #ABOUT
@@ -505,12 +504,8 @@ main {
   opacity: 0.7;
 }
 .modal-close-btn:hover,
-.modal-close-btn:focus {
-  opacity: 1;
-}
-.modal-close-btn ion-icon {
-  --ionicon-stroke-width: 50px;
-}
+.modal-close-btn:focus { opacity: 1; }
+.modal-close-btn ion-icon { --ionicon-stroke-width: 50px; }
 .modal-avatar-box {
   background: var(--bg-gradient-onyx);
   width: max-content;
@@ -518,9 +513,7 @@ main {
   margin-bottom: 15px;
   box-shadow: var(--shadow-2);
 }
-.modal-img-wrapper > img {
-  display: none;
-}
+.modal-img-wrapper > img { display: none; }
 .modal-title { margin-bottom: 4px; }
 .modal-content time {
   font-size: var(--fs-6);
@@ -535,9 +528,9 @@ main {
   line-height: 1.6;
 }
 
-/*-----------------------------------*\
-  #EXPERIENCE (formerly #RESUME)
-\*-----------------------------------*/
+/**
+ * #RESUME (Experience)
+ */
 .article-title { margin-bottom: 30px; }
 
 /* timeline */
@@ -594,7 +587,7 @@ main {
   line-height: 1.6;
 }
 
-/* experience-cards */
+/* experience cards */
 .experience-intro {
   padding: 20px;
   font-size: 16px;
@@ -627,9 +620,8 @@ main {
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
-.filter-list {
-  display: none; /* we override this in script for large screens if needed */
-}
+
+.filter-list { display: none; }
 .filter-select-box {
   position: relative;
   margin-bottom: 25px;
@@ -750,9 +742,7 @@ main {
   object-fit: cover;
   transition: var(--transition-1);
 }
-.project-item > a:hover img {
-  transform: scale(1.1);
-}
+.project-item > a:hover img { transform: scale(1.1); }
 .project-title,
 .project-category {
   margin-left: 10px;
@@ -784,19 +774,10 @@ main {
   cursor: pointer;
 }
 
-/* 
-  Make the projects-intro color match the contact page color 
-  (var(--white-2)).
-*/
-.projects-intro {
-  padding: 15px;
-  font-size: 16px;
-  color: var(--white-2);
-}
-
 /*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/
+
 .mapbox {
   position: relative;
   height: 250px;
@@ -812,6 +793,7 @@ main {
   height: 100%;
   border: none;
 }
+
 .contact-form {
   margin-bottom: 10px;
   padding: 20px 0;
@@ -824,6 +806,7 @@ main {
   gap: 25px;
   margin-bottom: 25px;
 }
+
 .form-input {
   color: var(--white-2);
   font-size: var(--fs-6);
@@ -833,12 +816,8 @@ main {
   border-radius: 14px;
   outline: none;
 }
-.form-input::placeholder {
-  font-weight: var(--fw-500);
-}
-.form-input:focus {
-  border-color: var(--orange-yellow-crayola);
-}
+.form-input::placeholder { font-weight: var(--fw-500); }
+.form-input:focus { border-color: var(--orange-yellow-crayola); }
 textarea.form-input {
   min-height: 100px;
   height: 120px;
@@ -888,9 +867,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
-/* 
-   Original media queries 
-*/
+
+/* Media queries as originally defined */
 
 @media (min-width: 450px) {
   .clients-item { min-width: calc(33.33% - 10px); }
@@ -1197,6 +1175,23 @@ input:checked + .slider:before {
 }
 
 /*-----------------------------------*\
+  #CONTACT FORM NEW ROW LAYOUT
+\*-----------------------------------*/
+.form-intro {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: var(--white-2);
+}
+.form .row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.form .row > .form-input {
+  flex: 1;
+}
+
+/*-----------------------------------*\
   #LIGHT MODE OVERRIDES
 \*-----------------------------------*/
 body.light-mode {
@@ -1211,3 +1206,5 @@ body.light-mode article {
 body.light-mode a {
   color: #0066cc;
 }
+
+/* End of style.css */
