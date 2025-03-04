@@ -153,6 +153,7 @@
       <!-- NAVBAR -->
       <nav class="navbar">
         <ul class="navbar-list">
+          <!-- The nav text must exactly match the articles' data-page values -->
           <li class="navbar-item">
             <button class="navbar-link active" data-nav-link>About</button>
           </li>
@@ -168,7 +169,7 @@
         </ul>
       </nav>
 
-      <!-- ABOUT SECTION (data-page="about") -->
+      <!-- ABOUT SECTION -->
       <article class="about active" data-page="about">
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -260,7 +261,7 @@
         </div>
       </article>
 
-      <!-- EXPERIENCE SECTION (data-page="experience") -->
+      <!-- EXPERIENCE SECTION -->
       <article class="experience" data-page="experience">
         <header>
           <h2 class="h2 article-title">Experience</h2>
@@ -321,22 +322,21 @@
         </div>
       </article>
 
-      <!-- PROJECTS SECTION (data-page="projects") -->
+      <!-- PROJECTS SECTION -->
       <article class="portfolio" data-page="projects">
         <header>
           <h2 class="h2 article-title">Projects</h2>
         </header>
 
-        <!-- Projects Intro with color: var(--white-2) -->
+        <!-- Projects Intro (color matched to Contact) -->
         <section class="projects-intro">
           <p>
-            Welcome to my projects portfolio. Here you will find a selection of projects
-            that demonstrate my skills in project management, data analysis, and product strategy.
+            Welcome to my projects portfolio. Here you will find a selection of projects that demonstrate my skills in project management, data analysis, and product strategy.
           </p>
         </section>
 
         <section class="projects">
-          <!-- Filter list with clickable words (All, Creative, Critical) -->
+          <!-- Filter list with clickable words -->
           <ul class="filter-list">
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
@@ -349,10 +349,7 @@
             </li>
           </ul>
 
-          <!-- 
-            Comment out the drop-down for future use 
-            so it no longer appears in the UI
-          -->
+          <!-- Drop-down menu commented out for future use -->
           <!--
           <div class="filter-select-box">
             <button class="filter-select" data-select>
@@ -376,7 +373,6 @@
           -->
 
           <ul class="project-list">
-            <!-- Example Project 1 -->
             <li class="project-item active" data-filter-item data-category="creative">
               <a href="https://nicholaspannun.github.io/project1/">
                 <figure class="project-img">
@@ -391,8 +387,6 @@
               </a>
               <button class="read-more-btn" onclick="openProjectDetails('project1')">Read More</button>
             </li>
-
-            <!-- Example Project 2 -->
             <li class="project-item active" data-filter-item data-category="critical">
               <a href="https://nicholaspannun.github.io/project2/">
                 <figure class="project-img">
@@ -411,7 +405,7 @@
         </section>
       </article>
 
-      <!-- CONTACT SECTION (data-page="contact") -->
+      <!-- CONTACT SECTION -->
       <article class="contact" data-page="contact">
         <header>
           <h2 class="h2 article-title">Contact</h2>
