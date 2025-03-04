@@ -627,7 +627,9 @@ main {
   #PORTFOLIO
 \*-----------------------------------*/
 .filter-list {
-  display: none;
+  display: flex;
+  gap: 15px; /* optional spacing between filter buttons */
+  margin-bottom: 30px; /* some spacing below */
 }
 .filter-select-box {
   position: relative;
