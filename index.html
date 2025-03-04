@@ -5,16 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nicholas Pannunzio - Portfolio</title>
+
+  <!-- Ionicons -->
   <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+
   <!-- favicon -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+
   <!-- custom css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
+
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
 
   <!-- MAIN -->
@@ -23,13 +31,16 @@
     <!-- SIDEBAR -->
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
+
         <figure class="avatar-box">
           <img src="./assets/images/my-avatar.png" alt="Nicholas Pannunzio" width="80" />
         </figure>
+
         <div class="info-content">
           <h1 class="name" title="Nicholas Pannunzio">Nicholas Pannunzio</h1>
           <p class="title">Project Manager / Product Manager / Data Analyst</p>
-          <!-- Dark/Light Toggle -->
+
+          <!-- Dark/Light Mode Toggle -->
           <div class="theme-toggle">
             <label class="switch">
               <input type="checkbox" id="themeToggleCheckbox">
@@ -37,13 +48,16 @@
             </label>
           </div>
         </div>
+
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contact Info</span>
           <ion-icon name="chevron-down"></ion-icon>
         </button>
       </div>
+
       <div class="sidebar-info_more">
         <div class="separator"></div>
+
         <ul class="contacts-list">
           <!-- Email -->
           <li class="contact-item">
@@ -55,6 +69,7 @@
               <a href="mailto:nicholaspannunz@gmail.com" class="contact-link">nicholaspannunz@gmail.com</a>
             </div>
           </li>
+
           <!-- Phone -->
           <li class="contact-item">
             <div class="icon-box">
@@ -65,6 +80,7 @@
               <a href="tel:+15142428190" class="contact-link">(514) 242-8190</a>
             </div>
           </li>
+
           <!-- Location -->
           <li class="contact-item">
             <div class="icon-box">
@@ -75,6 +91,7 @@
               <address>Montreal, Quebec</address>
             </div>
           </li>
+
           <!-- Certifications -->
           <li class="contact-item">
             <div class="icon-box">
@@ -88,7 +105,8 @@
               </ul>
             </div>
           </li>
-          <!-- Languages with Flags -->
+
+          <!-- Languages -->
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="language-outline"></ion-icon>
@@ -112,7 +130,9 @@
             </div>
           </li>
         </ul>
+
         <div class="separator"></div>
+
         <ul class="social-list">
           <li class="social-item">
             <a href="https://github.com/NicholasPannunzio" target="_blank" class="social-link">
@@ -130,17 +150,27 @@
 
     <!-- MAIN CONTENT -->
     <div class="main-content">
+
       <!-- NAVBAR -->
       <nav class="navbar">
         <ul class="navbar-list">
-          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Experience</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Projects</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+          <!-- Make sure these appear in the same order as the articles below -->
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
         </ul>
       </nav>
 
-      <!-- ABOUT SECTION -->
+      <!-- ABOUT SECTION (data-page="about") -->
       <article class="about active" data-page="about">
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -163,10 +193,14 @@
             Expert in web and mobile development principles, continuously leveraging this expertise to enhance the CGI IP product.
           </p>
           <p>
-            Proficient in UI/UX design, utilizing tools such as Figma and Adobe XD to create high-fidelity, interactive designs that provide visual guidance for platform improvements.
+            Proficient in UI/UX design, utilizing tools such as Figma and Adobe XD to create high-fidelity, interactive designs
+            that provide visual guidance for platform improvements.
           </p>
           <p>
-            Solid foundation in data analytics, using applications like PowerBI to prepare client reports and create insightful dashboards for the IP’s web and mobile applications. Passionate about management and technology, demonstrated by the development of an IoT device for dragon boat athletes to monitor performance metrics and provide essential data to coaches.
+            Solid foundation in data analytics, using applications like PowerBI to prepare client reports and create
+            insightful dashboards for the IP’s web and mobile applications. Passionate about management and technology,
+            demonstrated by the development of an IoT device for dragon boat athletes to monitor performance metrics and
+            provide essential data to coaches.
           </p>
         </section>
 
@@ -182,7 +216,8 @@
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Client 1</h4>
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Nicholas is a dedicated professional with a keen ability to manage complex projects effectively. His analytical skills and attention to detail make him an asset to any team.
+                    Nicholas is a dedicated professional with a keen ability to manage complex projects effectively. His
+                    analytical skills and attention to detail make him an asset to any team.
                   </p>
                 </div>
               </div>
@@ -193,7 +228,8 @@
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Client 2</h4>
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Working with Nicholas was a fantastic experience. He is not only a skilled manager but also a great communicator. His ability to adapt and solve problems is truly commendable.
+                    Working with Nicholas was a fantastic experience. He is not only a skilled manager but also a great
+                    communicator. His ability to adapt and solve problems is truly commendable.
                   </p>
                 </div>
               </div>
@@ -223,53 +259,15 @@
         </div>
       </article>
 
-      <!-- CONTACT SECTION -->
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-        <section class="contact-form">
-          <h3 class="h3 form-title">Get In Touch</h3>
-          <!-- Introductory paragraph -->
-          <p class="form-intro">Please fill out the form below and I will get back to you as soon as possible.</p>
-          <form action="#" class="form" data-form>
-            <!-- Row 1: First Name and Last Name -->
-            <div class="row">
-              <input type="text" name="firstname" class="form-input" placeholder="First Name" required data-form-input>
-              <input type="text" name="lastname" class="form-input" placeholder="Last Name" required data-form-input>
-            </div>
-            <!-- Row 2: Email -->
-            <div class="row">
-              <input type="email" name="email" class="form-input" placeholder="Email" required data-form-input>
-            </div>
-            <!-- Row 3: Phone Number -->
-            <div class="row">
-              <input type="tel" name="phone" class="form-input" placeholder="Phone Number" required data-form-input>
-            </div>
-            <!-- Row 4: Subject -->
-            <div class="row">
-              <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input>
-            </div>
-            <!-- Row 5: Your Message -->
-            <div class="row">
-              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            </div>
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
-      </article>
-
-      <!-- EXPERIENCE SECTION -->
+      <!-- EXPERIENCE SECTION (data-page="experience") -->
       <article class="experience" data-page="experience">
         <header>
           <h2 class="h2 article-title">Experience</h2>
         </header>
         <section class="experience-intro">
           <p>
-            With a strong foundation in web development and project management, I have honed my skills across diverse projects—from managing product roadmaps to analyzing data-driven insights.
+            With a strong foundation in web development and project management, I have honed my skills across diverse
+            projects—from managing product roadmaps to analyzing data-driven insights.
           </p>
         </section>
         <section class="timeline">
@@ -303,14 +301,16 @@
             <h4 class="card-title">Software Engineer at ABC Corp</h4>
             <p class="card-duration">Jan 2020 - Present</p>
             <p class="card-description">
-              Developed web applications using modern frameworks, collaborating with cross-functional teams to deliver robust solutions.
+              Developed web applications using modern frameworks, collaborating with cross-functional teams to deliver
+              robust solutions.
             </p>
           </div>
           <div class="card">
             <h4 class="card-title">Web Developer Intern at XYZ Inc</h4>
             <p class="card-duration">Jun 2019 - Dec 2019</p>
             <p class="card-description">
-              Assisted in developing and maintaining responsive websites, gaining hands-on experience with front-end technologies.
+              Assisted in developing and maintaining responsive websites, gaining hands-on experience with front-end
+              technologies.
             </p>
           </div>
         </section>
@@ -319,14 +319,15 @@
         </div>
       </article>
 
-      <!-- PROJECTS SECTION -->
+      <!-- PROJECTS SECTION (data-page="projects") -->
       <article class="portfolio" data-page="projects">
         <header>
           <h2 class="h2 article-title">Projects</h2>
         </header>
         <section class="projects-intro">
           <p>
-            Welcome to my projects portfolio. Here you will find a selection of projects that demonstrate my skills in project management, data analysis, and product strategy.
+            Welcome to my projects portfolio. Here you will find a selection of projects that demonstrate my skills in
+            project management, data analysis, and product strategy.
           </p>
         </section>
         <section class="projects">
@@ -341,6 +342,7 @@
               <button data-filter-btn>Critical</button>
             </li>
           </ul>
+
           <div class="filter-select-box">
             <button class="filter-select" data-select>
               <div class="select-value" data-selecct-value>Select category</div>
@@ -360,6 +362,7 @@
               </li>
             </ul>
           </div>
+
           <ul class="project-list">
             <li class="project-item active" data-filter-item data-category="creative">
               <a href="https://nicholaspannun.github.io/project1/">
@@ -375,6 +378,7 @@
               </a>
               <button class="read-more-btn" onclick="openProjectDetails('project1')">Read More</button>
             </li>
+
             <li class="project-item active" data-filter-item data-category="critical">
               <a href="https://nicholaspannun.github.io/project2/">
                 <figure class="project-img">
@@ -393,17 +397,16 @@
         </section>
       </article>
 
-      <!-- CONTACT SECTION -->
+      <!-- CONTACT SECTION (data-page="contact") -->
       <article class="contact" data-page="contact">
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
         <section class="contact-form">
           <h3 class="h3 form-title">Get In Touch</h3>
-          <!-- Introductory paragraph -->
           <p class="form-intro">Please fill out the form below and I will get back to you as soon as possible.</p>
           <form action="#" class="form" data-form>
-            <!-- Row 1: First Name and Last Name -->
+            <!-- Row 1: First Name + Last Name -->
             <div class="row">
               <input type="text" name="firstname" class="form-input" placeholder="First Name" required data-form-input>
               <input type="text" name="lastname" class="form-input" placeholder="Last Name" required data-form-input>
@@ -412,7 +415,7 @@
             <div class="row">
               <input type="email" name="email" class="form-input" placeholder="Email" required data-form-input>
             </div>
-            <!-- Row 3: Phone Number -->
+            <!-- Row 3: Phone -->
             <div class="row">
               <input type="tel" name="phone" class="form-input" placeholder="Phone Number" required data-form-input>
             </div>
@@ -420,7 +423,7 @@
             <div class="row">
               <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input>
             </div>
-            <!-- Row 5: Your Message -->
+            <!-- Row 5: Message -->
             <div class="row">
               <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
             </div>
@@ -434,6 +437,7 @@
 
     </div> <!-- End of .main-content -->
   </main>
+
   <script src="./assets/js/script.js"></script>
 </body>
 </html>
