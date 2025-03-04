@@ -1,9 +1,5 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
 :root {
-  /* gradient */
+  /* gradients */
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(240, 1%, 25%) 3%, 
@@ -35,7 +31,7 @@
     hsl(35, 100%, 68%)
   );
 
-  /* solid */
+  /* solid colors */
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
@@ -64,14 +60,14 @@
   --fw-500: 500;
   --fw-600: 600;
 
-  /* shadow */
+  /* shadows */
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
   --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
 
-  /* transition */
+  /* transitions */
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
 }
@@ -154,7 +150,7 @@ article {
   border-radius: inherit;
   z-index: -1;
 }
-icon-box ion-icon { --ionicon-stroke-width: 35px; }
+.icon-box ion-icon { --ionicon-stroke-width: 35px; }
 
 article { display: none; }
 article.active {
@@ -228,6 +224,7 @@ article.active {
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
+  transition: var(--transition-1);
 }
 
 /*-----------------------------------*\
@@ -633,14 +630,14 @@ main {
   color: var(--white-2);
 }
 
-/* Ensure filter-list is visible */
+/* Filter list */
 .filter-list {
   display: flex;
   gap: 15px;
   margin-bottom: 30px;
 }
 
-/* Filter buttons styling */
+/* Updated Filter Buttons */
 .filter-list .filter-item button {
   color: var(--light-gray-70);
   font-size: var(--fs-5);
@@ -654,7 +651,7 @@ main {
   font-weight: var(--fw-500);
 }
 
-/* (Drop-down remains commented out in HTML) */
+/* (Drop-down remains commented out) */
 .filter-select-box {
   position: relative;
   margin-bottom: 25px;
@@ -779,7 +776,7 @@ main {
   transform: scale(1.1);
 }
 
-/* Project item text styling (title, category, subtitles) */
+/* Updated Project Item Text Styling (New Order: Title, Category, Subtitle) */
 .project-title {
   margin-left: 10px;
   color: var(--white-2);
@@ -793,6 +790,7 @@ main {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+  font-style: italic; /* italicized category */
 }
 .project-subtitle {
   display: flex;
@@ -801,7 +799,6 @@ main {
   margin-left: 10px;
   margin-top: 5px;
 }
-/* Pill color changed to #F0A500 for a more subdued orange */
 .project-subtitle-pill {
   background-color: #F0A500;
   color: var(--white-1);
@@ -904,18 +901,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   opacity: 0.7;
   cursor: not-allowed;
 }
-.form-btn:disabled:hover {
-  background: var(--border-gradient-onyx);
-}
-.form-btn:disabled:hover::before {
-  background: var(--bg-gradient-jet);
-}
+.form-btn:disabled:hover { background: var(--border-gradient-onyx); }
+.form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
-
-/* Original media queries remain the same... */
 
 @media (min-width: 450px) {
   .clients-item { min-width: calc(33.33% - 10px); }
@@ -1169,7 +1160,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .social-list { justify-content: center; }
   .timeline-text { max-width: 700px; }
 }
-
+  
 /*-----------------------------------*\
   #DAY/NIGHT TOGGLE
 \*-----------------------------------*/
