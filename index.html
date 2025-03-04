@@ -31,7 +31,6 @@
     <!-- SIDEBAR -->
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
-
         <figure class="avatar-box">
           <img src="./assets/images/my-avatar.png" alt="Nicholas Pannunzio" width="80" />
         </figure>
@@ -154,7 +153,7 @@
       <!-- NAVBAR -->
       <nav class="navbar">
         <ul class="navbar-list">
-          <!-- Make sure these appear in the same order as the articles below -->
+          <!-- Match text EXACTLY to data-page in each article -->
           <li class="navbar-item">
             <button class="navbar-link active" data-nav-link>About</button>
           </li>
@@ -188,13 +187,16 @@
             testing tools, and telecommunication network operations. Proficient in technical design tools such as MATLAB,
             Feko, OrCAD PSPICE, and AutoCAD, as well as network monitoring tools like Cisco Packet Tracer.
           </p>
-          <p>Highly skilled in the Microsoft Office Suite.</p>
           <p>
-            Expert in web and mobile development principles, continuously leveraging this expertise to enhance the CGI IP product.
+            Highly skilled in the Microsoft Office Suite.
           </p>
           <p>
-            Proficient in UI/UX design, utilizing tools such as Figma and Adobe XD to create high-fidelity, interactive designs
-            that provide visual guidance for platform improvements.
+            Expert in web and mobile development principles, continuously leveraging this expertise to enhance the CGI IP
+            product.
+          </p>
+          <p>
+            Proficient in UI/UX design, utilizing tools such as Figma and Adobe XD to create high-fidelity, interactive
+            designs that provide visual guidance for platform improvements.
           </p>
           <p>
             Solid foundation in data analytics, using applications like PowerBI to prepare client reports and create
@@ -296,6 +298,8 @@
             </li>
           </ol>
         </section>
+
+        <!-- Example experience cards -->
         <section class="experience-cards">
           <div class="card">
             <h4 class="card-title">Software Engineer at ABC Corp</h4>
@@ -314,6 +318,7 @@
             </p>
           </div>
         </section>
+
         <div class="download-cv">
           <a href="./assets/files/CV.pdf" download class="btn download-btn">Download CV</a>
         </div>
@@ -326,8 +331,8 @@
         </header>
         <section class="projects-intro">
           <p>
-            Welcome to my projects portfolio. Here you will find a selection of projects that demonstrate my skills in
-            project management, data analysis, and product strategy.
+            Welcome to my projects portfolio. Here you will find a selection of projects that demonstrate my skills
+            in project management, data analysis, and product strategy.
           </p>
         </section>
         <section class="projects">
@@ -404,29 +409,14 @@
         </header>
         <section class="contact-form">
           <h3 class="h3 form-title">Get In Touch</h3>
-          <p class="form-intro">Please fill out the form below and I will get back to you as soon as possible.</p>
+          <p>Please fill out the form below and I will get back to you as soon as possible.</p>
           <form action="#" class="form" data-form>
-            <!-- Row 1: First Name + Last Name -->
-            <div class="row">
-              <input type="text" name="firstname" class="form-input" placeholder="First Name" required data-form-input>
-              <input type="text" name="lastname" class="form-input" placeholder="Last Name" required data-form-input>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Your Name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Your Email" required data-form-input>
             </div>
-            <!-- Row 2: Email -->
-            <div class="row">
-              <input type="email" name="email" class="form-input" placeholder="Email" required data-form-input>
-            </div>
-            <!-- Row 3: Phone -->
-            <div class="row">
-              <input type="tel" name="phone" class="form-input" placeholder="Phone Number" required data-form-input>
-            </div>
-            <!-- Row 4: Subject -->
-            <div class="row">
-              <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input>
-            </div>
-            <!-- Row 5: Message -->
-            <div class="row">
-              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            </div>
+            <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
